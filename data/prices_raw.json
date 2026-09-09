@@ -1,0 +1,2534 @@
+{
+ "$schema": "https://aiapiindex.com/prices.json",
+ "source": "https://aiapiindex.com",
+ "license": "CC BY 4.0 — attribution required: AI API Index (aiapiindex.com)",
+ "generated": "2026-09-05",
+ "asOf": {
+  "llm": "2026-09-05",
+  "media": "2026-08-08"
+ },
+ "publicData": {
+  "manifest": "https://aiapiindex.com/public-data/manifest.json",
+  "explorer": "https://aiapiindex.com/data-explorer.html",
+  "license": "Imported data retains each upstream source's license and terms; see the manifest.",
+  "note": "Provider routes and benchmark configurations are separate observations and do not overwrite this curated price snapshot."
+ },
+ "units": {
+  "llm": "USD per 1M tokens (standard list price)",
+  "stt": "USD per audio hour",
+  "tts": "USD per 1M characters",
+  "embed": "USD per 1M tokens",
+  "music": "USD per track (approx.)",
+  "image": "USD per image (~1K tier)",
+  "video": "USD per second",
+  "imgedit": "USD per edited image"
+ },
+ "llm": [
+  {
+   "provider": "OpenAI",
+   "name": "GPT-6 Astra",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 10,
+   "outPrice": 50,
+   "cachedIn": 1,
+   "ctx": 1050000,
+   "maxOut": 128000,
+   "cutoff": "2026-04",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-09",
+   "speed": null,
+   "bench": {
+    "aa": 61.2,
+    "gpqa": 96.1,
+    "hle": 54.7
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "name": "GPT-5.6 Sol",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 4,
+   "outPrice": 20,
+   "cachedIn": 0.4,
+   "ctx": 1050000,
+   "maxOut": 128000,
+   "cutoff": "2026-02",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-07",
+   "speed": 81,
+   "bench": {
+    "aa": 60.9,
+    "elo": 1455,
+    "gpqa": 94.1,
+    "hle": 49.5
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "name": "GPT-5.6 Terra",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 2,
+   "outPrice": 12,
+   "cachedIn": 0.2,
+   "ctx": 1050000,
+   "maxOut": 128000,
+   "cutoff": "2026-02",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-07",
+   "speed": 104,
+   "bench": {
+    "aa": 56.6,
+    "elo": 1447,
+    "gpqa": 92.5,
+    "hle": 42.9
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "name": "GPT-5.6 Luna",
+   "tier": "small",
+   "reasoning": true,
+   "inPrice": 0.2,
+   "outPrice": 1.2,
+   "cachedIn": 0.02,
+   "ctx": 1050000,
+   "maxOut": 128000,
+   "cutoff": "2026-02",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-07",
+   "speed": 110,
+   "bench": {
+    "aa": 52.3,
+    "elo": 1430,
+    "gpqa": 91.1,
+    "hle": 39.5
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "name": "GPT-5.5",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 5,
+   "outPrice": 30,
+   "cachedIn": 0.5,
+   "ctx": 1050000,
+   "maxOut": 128000,
+   "cutoff": "2025-12",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-04",
+   "speed": 66,
+   "bench": {
+    "aa": 56.3,
+    "elo": 1472,
+    "gpqa": 93.5,
+    "aime": 100,
+    "swe": 88.7,
+    "hle": 45.8,
+    "mmmu": 81.2
+   },
+   "selfRep": [
+    "swe",
+    "aime"
+   ]
+  },
+  {
+   "provider": "OpenAI",
+   "name": "GPT-5.5 Pro",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 30,
+   "outPrice": 180,
+   "cachedIn": null,
+   "ctx": 1050000,
+   "maxOut": 128000,
+   "cutoff": "2025-12",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-04",
+   "speed": null,
+   "bench": {
+    "gpqa": 93.9,
+    "aime": 100,
+    "hle": 57.2
+   },
+   "selfRep": [
+    "gpqa",
+    "aime",
+    "hle"
+   ]
+  },
+  {
+   "provider": "OpenAI",
+   "name": "GPT-5.4",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 2.5,
+   "outPrice": 15,
+   "cachedIn": 0.25,
+   "ctx": 1050000,
+   "maxOut": 128000,
+   "cutoff": "2025-08",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-03",
+   "speed": 150,
+   "bench": {
+    "aa": 53.1,
+    "elo": 1470,
+    "gpqa": 92,
+    "swe": 76.9,
+    "hle": 43.7
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "name": "GPT-5.4 Pro",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 30,
+   "outPrice": 180,
+   "cachedIn": null,
+   "ctx": 1050000,
+   "maxOut": 128000,
+   "cutoff": "2025-08",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-03",
+   "speed": null,
+   "bench": {}
+  },
+  {
+   "provider": "OpenAI",
+   "name": "GPT-5.4 mini",
+   "tier": "small",
+   "reasoning": true,
+   "inPrice": 0.75,
+   "outPrice": 4.5,
+   "cachedIn": 0.075,
+   "ctx": 400000,
+   "maxOut": 128000,
+   "cutoff": "2025-08",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-03",
+   "speed": 175,
+   "bench": {
+    "aa": 40.9,
+    "elo": 1412,
+    "gpqa": 87.5,
+    "hle": 28.1
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "name": "GPT-5.4 nano",
+   "tier": "small",
+   "reasoning": true,
+   "inPrice": 0.2,
+   "outPrice": 1.25,
+   "cachedIn": 0.02,
+   "ctx": 400000,
+   "maxOut": 128000,
+   "cutoff": "2025-08",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-03",
+   "speed": 163,
+   "bench": {
+    "aa": 39.7,
+    "elo": 1373,
+    "gpqa": 81.7,
+    "hle": 28.3
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "name": "GPT-5.3 Codex",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 1.75,
+   "outPrice": 14,
+   "cachedIn": 0.175,
+   "ctx": 400000,
+   "maxOut": 128000,
+   "cutoff": "2025-08",
+   "license": "prop",
+   "modality": "T+I",
+   "released": null,
+   "speed": 126,
+   "bench": {
+    "aa": 45.5,
+    "swe": 85,
+    "gpqa": 91.5,
+    "hle": 42.5
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "name": "GPT-4.1",
+   "tier": "legacy",
+   "reasoning": false,
+   "inPrice": 2,
+   "outPrice": 8,
+   "cachedIn": 0.5,
+   "ctx": 1047576,
+   "maxOut": 32768,
+   "cutoff": "2024-06",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2025-04",
+   "speed": null,
+   "bench": {
+    "aa": 19.6,
+    "elo": 1383,
+    "gpqa": 66.6,
+    "hle": 4.2
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "name": "GPT-4.1 mini",
+   "tier": "legacy",
+   "reasoning": false,
+   "inPrice": 0.4,
+   "outPrice": 1.6,
+   "cachedIn": 0.1,
+   "ctx": 1047576,
+   "maxOut": 32768,
+   "cutoff": "2024-06",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2025-04",
+   "speed": null,
+   "bench": {
+    "aa": 14.8,
+    "elo": 1340,
+    "gpqa": 66.4,
+    "hle": 5
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "name": "GPT-4.1 nano",
+   "tier": "legacy",
+   "reasoning": false,
+   "inPrice": 0.1,
+   "outPrice": 0.4,
+   "cachedIn": 0.025,
+   "ctx": 1047576,
+   "maxOut": 32768,
+   "cutoff": "2024-06",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2025-04",
+   "speed": null,
+   "bench": {
+    "aa": 9.6,
+    "gpqa": 51.2,
+    "hle": 3.8
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "name": "GPT-4o",
+   "tier": "legacy",
+   "reasoning": false,
+   "inPrice": 2.5,
+   "outPrice": 10,
+   "cachedIn": 1.25,
+   "ctx": 128000,
+   "maxOut": 16384,
+   "cutoff": "2023-10",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2024-05",
+   "speed": null,
+   "bench": {
+    "aa": 12.3,
+    "gpqa": 65.5,
+    "hle": 4
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "name": "GPT-4o mini",
+   "tier": "legacy",
+   "reasoning": false,
+   "inPrice": 0.15,
+   "outPrice": 0.6,
+   "cachedIn": 0.075,
+   "ctx": 128000,
+   "maxOut": 16384,
+   "cutoff": "2023-10",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2024-07",
+   "speed": null,
+   "bench": {
+    "aa": 6.7,
+    "gpqa": 42.6,
+    "hle": 4.2
+   }
+  },
+  {
+   "provider": "Anthropic",
+   "name": "Claude Fable 5.1",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 10,
+   "outPrice": 50,
+   "cachedIn": 0.25,
+   "ctx": 1000000,
+   "maxOut": 128000,
+   "cutoff": "2026-06",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-09",
+   "speed": 71,
+   "bench": {
+    "aa": 65.7,
+    "gpqa": 93.7,
+    "hle": 59.1
+   }
+  },
+  {
+   "provider": "Anthropic",
+   "name": "Claude Opus 5",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 5,
+   "outPrice": 25,
+   "cachedIn": 0.5,
+   "ctx": 1000000,
+   "maxOut": 128000,
+   "cutoff": "2026-05",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-07",
+   "speed": 52,
+   "bench": {
+    "aa": 63.1,
+    "elo": 1505,
+    "gpqa": 93.2,
+    "swe": 97,
+    "lcb": 74.6,
+    "mmluPro": 91.6,
+    "hle": 54.9
+   }
+  },
+  {
+   "provider": "Anthropic",
+   "name": "Claude Fable 5",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 10,
+   "outPrice": 50,
+   "cachedIn": 1,
+   "ctx": 1000000,
+   "maxOut": 128000,
+   "cutoff": "2026-01",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-06",
+   "speed": 68,
+   "bench": {
+    "aa": 62.1,
+    "elo": 1494,
+    "gpqa": 92.6,
+    "aime": 99.7,
+    "swe": 95,
+    "mmluPro": 91.5,
+    "hle": 55.5
+   },
+   "selfRep": [
+    "aime",
+    "mmluPro"
+   ]
+  },
+  {
+   "provider": "Anthropic",
+   "name": "Claude Opus 4.8",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 5,
+   "outPrice": 25,
+   "cachedIn": 0.5,
+   "ctx": 1000000,
+   "maxOut": 128000,
+   "cutoff": "2026-01",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-05",
+   "speed": 63,
+   "bench": {
+    "aa": 57.3,
+    "elo": 1461,
+    "gpqa": 92,
+    "aime": 98.3,
+    "swe": 88.6,
+    "hle": 48.7
+   },
+   "selfRep": [
+    "aime",
+    "swe"
+   ]
+  },
+  {
+   "provider": "Anthropic",
+   "name": "Claude Sonnet 5",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 2,
+   "outPrice": 10,
+   "cachedIn": 0.2,
+   "ctx": 1000000,
+   "maxOut": 128000,
+   "cutoff": "2026-01",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-06",
+   "speed": 81,
+   "bench": {
+    "aa": 55.3,
+    "elo": 1443,
+    "gpqa": 91.1,
+    "swe": 85.2,
+    "hle": 41.3
+   }
+  },
+  {
+   "provider": "Anthropic",
+   "name": "Claude Haiku 4.5",
+   "tier": "small",
+   "reasoning": true,
+   "inPrice": 1,
+   "outPrice": 5,
+   "cachedIn": 0.1,
+   "ctx": 200000,
+   "maxOut": 64000,
+   "cutoff": "2025-02",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2025-10",
+   "speed": null,
+   "bench": {
+    "elo": 1395,
+    "swe": 73.3
+   }
+  },
+  {
+   "provider": "Anthropic",
+   "name": "Claude Opus 4.7",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 5,
+   "outPrice": 25,
+   "cachedIn": 0.5,
+   "ctx": 1000000,
+   "maxOut": 128000,
+   "cutoff": "2026-01",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-04",
+   "speed": 46,
+   "bench": {
+    "aa": 55,
+    "elo": 1490,
+    "gpqa": 91.4,
+    "aime": 97.8,
+    "swe": 87.6,
+    "hle": 42.3
+   },
+   "selfRep": [
+    "aime",
+    "swe"
+   ]
+  },
+  {
+   "provider": "Anthropic",
+   "name": "Claude Opus 4.6",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 5,
+   "outPrice": 25,
+   "cachedIn": 0.5,
+   "ctx": 1000000,
+   "maxOut": 128000,
+   "cutoff": "2025-05",
+   "license": "prop",
+   "modality": "T+I",
+   "released": null,
+   "speed": 46,
+   "bench": {
+    "aa": 44.9,
+    "elo": 1503,
+    "gpqa": 89.6,
+    "hle": 39.9
+   }
+  },
+  {
+   "provider": "Anthropic",
+   "name": "Claude Sonnet 4.6",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 3,
+   "outPrice": 15,
+   "cachedIn": 0.3,
+   "ctx": 1000000,
+   "maxOut": 128000,
+   "cutoff": "2025-08",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-02",
+   "speed": 49,
+   "bench": {
+    "aa": 48.4,
+    "elo": 1458,
+    "gpqa": 87.5,
+    "swe": 79.6,
+    "mmluPro": 79.2,
+    "hle": 33.6
+   }
+  },
+  {
+   "provider": "Anthropic",
+   "name": "Claude Opus 4.5",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 5,
+   "outPrice": 25,
+   "cachedIn": 0.5,
+   "ctx": 200000,
+   "maxOut": 64000,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2025-11",
+   "speed": null,
+   "bench": {
+    "aa": 41.9,
+    "elo": 1450,
+    "gpqa": 86.6,
+    "hle": 30.1
+   }
+  },
+  {
+   "provider": "Anthropic",
+   "name": "Claude Sonnet 4.5",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 3,
+   "outPrice": 15,
+   "cachedIn": 0.3,
+   "ctx": 200000,
+   "maxOut": 64000,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2025-09",
+   "speed": null,
+   "bench": {
+    "elo": 1438
+   }
+  },
+  {
+   "provider": "Google",
+   "name": "Gemini 3.1 Pro",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 2,
+   "outPrice": 12,
+   "cachedIn": 0.2,
+   "ctx": 1048576,
+   "maxOut": 65536,
+   "cutoff": "2025-01",
+   "license": "prop",
+   "modality": "T+I+A+V",
+   "released": "2026-02",
+   "speed": 118,
+   "bench": {
+    "aa": 47.7,
+    "elo": 1480,
+    "gpqa": 94.1,
+    "swe": 80.6,
+    "mmluPro": 91,
+    "hle": 47,
+    "mmmu": 80.5
+   }
+  },
+  {
+   "provider": "Google",
+   "name": "Gemini 3.8 Flash",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 0.75,
+   "outPrice": 3.75,
+   "cachedIn": 0.075,
+   "ctx": 1048576,
+   "maxOut": 65536,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T+I+A+V",
+   "released": "2026-09",
+   "speed": 417,
+   "bench": {
+    "aa": 58.7,
+    "gpqa": 95.3,
+    "hle": 47.8
+   }
+  },
+  {
+   "provider": "Google",
+   "name": "Gemini 3.7 Flash",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 0.75,
+   "outPrice": 3.75,
+   "cachedIn": 0.075,
+   "ctx": 1048576,
+   "maxOut": 65536,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T+I+A+V",
+   "released": "2026-08",
+   "speed": 309,
+   "bench": {
+    "aa": 56,
+    "elo": 1491,
+    "gpqa": 94.5,
+    "hle": 47.9
+   }
+  },
+  {
+   "provider": "Google",
+   "name": "Gemini 3.6 Flash",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 0.75,
+   "outPrice": 3.75,
+   "cachedIn": 0.075,
+   "ctx": 1048576,
+   "maxOut": 65536,
+   "cutoff": "2026-03",
+   "license": "prop",
+   "modality": "T+I+A+V",
+   "released": "2026-07",
+   "speed": 196,
+   "bench": {
+    "aa": 51.6,
+    "elo": 1476,
+    "gpqa": 92.8,
+    "hle": 40.8
+   }
+  },
+  {
+   "provider": "Google",
+   "name": "Gemini 3.5 Flash",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 1.5,
+   "outPrice": 9,
+   "cachedIn": 0.15,
+   "ctx": 1048576,
+   "maxOut": 65536,
+   "cutoff": "2025-01",
+   "license": "prop",
+   "modality": "T+I+A+V",
+   "released": "2026-05",
+   "speed": 251,
+   "bench": {
+    "aa": 52,
+    "elo": 1484,
+    "gpqa": 92.2,
+    "swe": 79.3,
+    "hle": 42.7,
+    "mmmu": 81.2
+   }
+  },
+  {
+   "provider": "Google",
+   "name": "Gemini 3.5 Flash-Lite",
+   "tier": "small",
+   "reasoning": true,
+   "inPrice": 0.3,
+   "outPrice": 2.5,
+   "cachedIn": 0.03,
+   "ctx": 1048576,
+   "maxOut": 65536,
+   "cutoff": "2026-03",
+   "license": "prop",
+   "modality": "T+I+A+V",
+   "released": "2026-07",
+   "speed": 366,
+   "bench": {
+    "aa": 37.4,
+    "elo": 1436,
+    "gpqa": 83.8,
+    "hle": 18.8
+   }
+  },
+  {
+   "provider": "Google",
+   "name": "Gemini 3.1 Flash-Lite",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 0.25,
+   "outPrice": 1.5,
+   "cachedIn": 0.025,
+   "ctx": 1048576,
+   "maxOut": 65536,
+   "cutoff": "2025-01",
+   "license": "prop",
+   "modality": "T+I+A+V",
+   "released": "2026-03",
+   "speed": 276,
+   "bench": {
+    "aa": 25.6,
+    "elo": 1415,
+    "gpqa": 82.2,
+    "hle": 17.2
+   }
+  },
+  {
+   "provider": "Google",
+   "name": "Gemini 2.5 Pro",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 1.25,
+   "outPrice": 10,
+   "cachedIn": 0.125,
+   "ctx": 1048576,
+   "maxOut": 65536,
+   "cutoff": "2025-01",
+   "license": "prop",
+   "modality": "T+I+A+V",
+   "released": "2025-06",
+   "speed": 124,
+   "bench": {
+    "aa": 25.9,
+    "elo": 1458,
+    "gpqa": 84.4,
+    "hle": 22.5
+   }
+  },
+  {
+   "provider": "Google",
+   "name": "Gemini 2.5 Flash",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 0.3,
+   "outPrice": 2.5,
+   "cachedIn": 0.03,
+   "ctx": 1048576,
+   "maxOut": 65536,
+   "cutoff": "2025-01",
+   "license": "prop",
+   "modality": "T+I+A+V",
+   "released": "2025-06",
+   "speed": 215,
+   "bench": {
+    "aa": 24.2,
+    "elo": 1417,
+    "gpqa": 79.3,
+    "hle": 13.8
+   }
+  },
+  {
+   "provider": "Google",
+   "name": "Gemini 2.0 Flash",
+   "tier": "legacy",
+   "reasoning": false,
+   "retired": "2026-06",
+   "inPrice": 0.1,
+   "outPrice": 0.4,
+   "cachedIn": 0.025,
+   "ctx": 1048576,
+   "maxOut": 8192,
+   "cutoff": "2024-08",
+   "license": "prop",
+   "modality": "T+I+A+V",
+   "released": "2025-02",
+   "speed": null,
+   "bench": {
+    "aa": 12.2,
+    "elo": 1354,
+    "gpqa": 62.3,
+    "hle": 4.3
+   }
+  },
+  {
+   "provider": "Google",
+   "name": "Gemini 2.0 Flash-Lite",
+   "tier": "legacy",
+   "reasoning": false,
+   "retired": "2026-06",
+   "inPrice": 0.075,
+   "outPrice": 0.3,
+   "cachedIn": null,
+   "ctx": 1048576,
+   "maxOut": 8192,
+   "cutoff": "2024-08",
+   "license": "prop",
+   "modality": "T+I+A+V",
+   "released": "2025-02",
+   "speed": null,
+   "bench": {
+    "aa": 8.6,
+    "gpqa": 53.5,
+    "hle": 3.4
+   }
+  },
+  {
+   "provider": "xAI",
+   "name": "Grok 4.6",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 2,
+   "outPrice": 6,
+   "cachedIn": 0.5,
+   "ctx": 500000,
+   "maxOut": null,
+   "cutoff": "2026-02",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-08",
+   "speed": 60,
+   "bench": {
+    "aa": 60.9,
+    "elo": 1444,
+    "gpqa": 94.9,
+    "hle": 42.9
+   }
+  },
+  {
+   "provider": "xAI",
+   "name": "Grok 4.5",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 2,
+   "outPrice": 6,
+   "cachedIn": 0.3,
+   "ctx": 500000,
+   "maxOut": null,
+   "cutoff": "2026-02",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-07",
+   "speed": 53,
+   "bench": {
+    "aa": 55.8,
+    "elo": 1452,
+    "gpqa": 93.1,
+    "swe": 86.6,
+    "hle": 42.7,
+    "mmmu": 80.4
+   }
+  },
+  {
+   "provider": "xAI",
+   "name": "Grok 4.3",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 1.25,
+   "outPrice": 2.5,
+   "cachedIn": 0.2,
+   "ctx": 1000000,
+   "maxOut": null,
+   "cutoff": "2025-12",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-04",
+   "speed": 137,
+   "bench": {
+    "aa": 37.9,
+    "elo": 1398,
+    "gpqa": 90.1,
+    "hle": 37.2
+   }
+  },
+  {
+   "provider": "xAI",
+   "name": "Grok Build 0.1",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 1,
+   "outPrice": 2,
+   "cachedIn": 0.2,
+   "ctx": 256000,
+   "maxOut": null,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T+I",
+   "released": null,
+   "speed": null,
+   "bench": {}
+  },
+  {
+   "provider": "xAI",
+   "name": "Grok 4.20",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 1.25,
+   "outPrice": 2.5,
+   "cachedIn": 0.2,
+   "ctx": 1000000,
+   "maxOut": null,
+   "cutoff": "2025-09",
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-03",
+   "speed": null,
+   "bench": {
+    "elo": 1451,
+    "swe": 76.7
+   },
+   "selfRep": [
+    "swe"
+   ]
+  },
+  {
+   "provider": "DeepSeek",
+   "name": "DeepSeek V4 Pro",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 1.32,
+   "outPrice": 3.96,
+   "cachedIn": 0.044,
+   "ctx": 1000000,
+   "maxOut": 384000,
+   "cutoff": null,
+   "license": "open",
+   "modality": "T",
+   "released": "2026-08",
+   "speed": 67,
+   "bench": {
+    "aa": 53.2,
+    "elo": 1440,
+    "gpqa": 92.8,
+    "swe": 96.4,
+    "hle": 41
+   }
+  },
+  {
+   "provider": "DeepSeek",
+   "name": "DeepSeek V4 Flash",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 0.44,
+   "outPrice": 1.32,
+   "cachedIn": 0.014,
+   "ctx": 1000000,
+   "maxOut": 384000,
+   "cutoff": null,
+   "license": "open",
+   "modality": "T",
+   "released": "2026-07",
+   "speed": 136,
+   "bench": {
+    "aa": 51.8,
+    "elo": 1432,
+    "gpqa": 90.8,
+    "hle": 38.6
+   }
+  },
+  {
+   "provider": "Alibaba Qwen",
+   "name": "Qwen3.8-Max",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 2,
+   "outPrice": 6,
+   "cachedIn": 0.25,
+   "ctx": 1000000,
+   "maxOut": 65536,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T",
+   "released": "2026-08",
+   "speed": 39,
+   "bench": {
+    "aa": 58.1,
+    "elo": 1480,
+    "gpqa": 92.7,
+    "hle": 43
+   }
+  },
+  {
+   "provider": "Alibaba Qwen",
+   "name": "Qwen3.8-Flash",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 0.15,
+   "outPrice": 0.47,
+   "cachedIn": 0.015,
+   "ctx": 1000000,
+   "maxOut": null,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T",
+   "released": "2026-08",
+   "speed": 86,
+   "bench": {
+    "aa": 55.8,
+    "gpqa": 92.3,
+    "hle": 38
+   }
+  },
+  {
+   "provider": "Alibaba Qwen",
+   "name": "Qwen3.7-Max",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 2.5,
+   "outPrice": 7.5,
+   "cachedIn": 0.25,
+   "ctx": 1000000,
+   "maxOut": 65536,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T",
+   "released": "2026-05",
+   "speed": 196,
+   "bench": {
+    "aa": 46.7,
+    "elo": 1474,
+    "gpqa": 92.3,
+    "aime": 91.3,
+    "swe": 80.4,
+    "lcb": 91.6,
+    "mmluPro": 89.6,
+    "hle": 40.5
+   },
+   "selfRep": [
+    "aime",
+    "lcb"
+   ]
+  },
+  {
+   "provider": "Alibaba Qwen",
+   "name": "Qwen3.7-Plus",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 0.4,
+   "outPrice": 1.6,
+   "cachedIn": null,
+   "ctx": 1000000,
+   "maxOut": 65536,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T+I+V",
+   "released": "2026-06",
+   "speed": 56,
+   "bench": {
+    "aa": 39.4,
+    "elo": 1454,
+    "gpqa": 90,
+    "swe": 77.7,
+    "lcb": 89.6,
+    "mmluPro": 88.5,
+    "hle": 35.6
+   },
+   "selfRep": [
+    "lcb"
+   ]
+  },
+  {
+   "provider": "Alibaba Qwen",
+   "name": "Qwen3.6-Flash",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 0.25,
+   "outPrice": 1.5,
+   "cachedIn": null,
+   "ctx": 1000000,
+   "maxOut": 65536,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T+I+V",
+   "released": null,
+   "speed": null,
+   "bench": {}
+  },
+  {
+   "provider": "Moonshot AI",
+   "name": "Kimi K3",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 3,
+   "outPrice": 15,
+   "cachedIn": 0.3,
+   "ctx": 1048576,
+   "maxOut": 1048576,
+   "cutoff": null,
+   "license": "open",
+   "modality": "T+I+V",
+   "released": "2026-07",
+   "speed": 38,
+   "bench": {
+    "aa": 59.7,
+    "elo": 1476,
+    "gpqa": 93.5,
+    "swe": 93.4,
+    "hle": 46.9,
+    "mmmu": 81.6
+   }
+  },
+  {
+   "provider": "Moonshot AI",
+   "name": "Kimi K2.7 Code",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 0.95,
+   "outPrice": 4,
+   "cachedIn": 0.19,
+   "ctx": 262144,
+   "maxOut": 32768,
+   "cutoff": null,
+   "license": "open",
+   "modality": "T+I+V",
+   "released": "2026-06",
+   "speed": 39,
+   "bench": {
+    "aa": 43,
+    "gpqa": 89.6,
+    "hle": 35
+   }
+  },
+  {
+   "provider": "Moonshot AI",
+   "name": "Kimi K2.6",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 0.95,
+   "outPrice": 4,
+   "cachedIn": 0.16,
+   "ctx": 262144,
+   "maxOut": 32768,
+   "cutoff": null,
+   "license": "open",
+   "modality": "T+I+V",
+   "released": "2026-04",
+   "speed": 41,
+   "bench": {
+    "aa": 45.1,
+    "elo": 1455,
+    "gpqa": 91.1,
+    "aime": 96.4,
+    "swe": 80.2,
+    "hle": 37.5
+   },
+   "selfRep": [
+    "aime",
+    "swe"
+   ]
+  },
+  {
+   "provider": "Mistral AI",
+   "name": "Mistral Medium 3.5",
+   "tier": "flagship",
+   "reasoning": false,
+   "inPrice": 1.5,
+   "outPrice": 7.5,
+   "cachedIn": null,
+   "ctx": null,
+   "maxOut": null,
+   "cutoff": null,
+   "license": "open",
+   "modality": "T+I",
+   "released": "2026-04",
+   "speed": 131,
+   "bench": {
+    "aa": 30.4,
+    "elo": 1421,
+    "swe": 77.6,
+    "gpqa": 74.8,
+    "hle": 13.8
+   }
+  },
+  {
+   "provider": "Mistral AI",
+   "name": "Mistral Large 3",
+   "tier": "mid",
+   "reasoning": false,
+   "inPrice": 0.5,
+   "outPrice": 1.5,
+   "cachedIn": null,
+   "ctx": null,
+   "maxOut": null,
+   "cutoff": null,
+   "license": "open",
+   "modality": "T+I",
+   "released": "2025-12",
+   "speed": 74,
+   "bench": {
+    "aa": 15.9,
+    "elo": 1428,
+    "gpqa": 68,
+    "hle": 4.2
+   }
+  },
+  {
+   "provider": "Mistral AI",
+   "name": "Magistral Medium",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 2,
+   "outPrice": 5,
+   "cachedIn": null,
+   "ctx": null,
+   "maxOut": null,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T+I",
+   "released": null,
+   "speed": null,
+   "bench": {}
+  },
+  {
+   "provider": "Mistral AI",
+   "name": "Codestral 25.08",
+   "tier": "mid",
+   "reasoning": false,
+   "inPrice": 0.3,
+   "outPrice": 0.9,
+   "cachedIn": null,
+   "ctx": null,
+   "maxOut": null,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T",
+   "released": "2025-08",
+   "speed": null,
+   "bench": {}
+  },
+  {
+   "provider": "Mistral AI",
+   "name": "Mistral Small 4",
+   "tier": "small",
+   "reasoning": true,
+   "inPrice": 0.15,
+   "outPrice": 0.6,
+   "cachedIn": null,
+   "ctx": null,
+   "maxOut": null,
+   "cutoff": null,
+   "license": "open",
+   "modality": "T+I",
+   "released": "2026-03",
+   "speed": 164,
+   "bench": {
+    "aa": 19.7,
+    "gpqa": 76.9,
+    "hle": 9.9
+   }
+  },
+  {
+   "provider": "Zhipu AI (Z.ai)",
+   "name": "GLM-5.3",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 1.4,
+   "outPrice": 4.4,
+   "cachedIn": 0.26,
+   "ctx": 1000000,
+   "maxOut": 128000,
+   "cutoff": null,
+   "license": "open",
+   "modality": "T",
+   "released": "2026-08",
+   "speed": 78,
+   "bench": {
+    "aa": 59.5,
+    "elo": 1474,
+    "gpqa": 91.7,
+    "hle": 42.3
+   }
+  },
+  {
+   "provider": "Zhipu AI (Z.ai)",
+   "name": "GLM-5.3-Flash",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 0.15,
+   "outPrice": 0.5,
+   "cachedIn": 0.03,
+   "ctx": 1000000,
+   "maxOut": null,
+   "cutoff": null,
+   "license": "open",
+   "modality": "T+I",
+   "released": "2026-08",
+   "speed": 45,
+   "bench": {
+    "aa": 57.5,
+    "elo": 1471,
+    "gpqa": 91.2,
+    "hle": 39.9
+   }
+  },
+  {
+   "provider": "Zhipu AI (Z.ai)",
+   "name": "GLM-5.2",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 1.4,
+   "outPrice": 4.4,
+   "cachedIn": 0.26,
+   "ctx": 1000000,
+   "maxOut": 128000,
+   "cutoff": null,
+   "license": "open",
+   "modality": "T",
+   "released": "2026-06",
+   "speed": 71,
+   "bench": {
+    "aa": 52.6,
+    "elo": 1467,
+    "gpqa": 89.5,
+    "aime": 99.2,
+    "hle": 41.1
+   },
+   "selfRep": [
+    "aime"
+   ]
+  },
+  {
+   "provider": "Zhipu AI (Z.ai)",
+   "name": "GLM-5",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 1,
+   "outPrice": 3.2,
+   "cachedIn": 0.2,
+   "ctx": 200000,
+   "maxOut": 128000,
+   "cutoff": null,
+   "license": "open",
+   "modality": "T",
+   "released": "2026-02",
+   "speed": 48,
+   "bench": {
+    "aa": 40.6,
+    "elo": 1446,
+    "gpqa": 82,
+    "hle": 29.3
+   }
+  },
+  {
+   "provider": "Zhipu AI (Z.ai)",
+   "name": "GLM-4.7",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 0.6,
+   "outPrice": 2.2,
+   "cachedIn": 0.11,
+   "ctx": null,
+   "maxOut": 128000,
+   "cutoff": null,
+   "license": "open",
+   "modality": "T",
+   "released": null,
+   "speed": 113,
+   "bench": {
+    "aa": 34.5,
+    "elo": 1436,
+    "gpqa": 85.9,
+    "hle": 27.4
+   }
+  },
+  {
+   "provider": "Zhipu AI (Z.ai)",
+   "name": "GLM-4.5-Air",
+   "tier": "small",
+   "reasoning": true,
+   "inPrice": 0.2,
+   "outPrice": 1.1,
+   "cachedIn": 0.03,
+   "ctx": null,
+   "maxOut": 96000,
+   "cutoff": null,
+   "license": "open",
+   "modality": "T",
+   "released": "2025-07",
+   "speed": 81,
+   "bench": {
+    "aa": 16.7,
+    "elo": 1384,
+    "gpqa": 73.3,
+    "hle": 7
+   }
+  },
+  {
+   "provider": "MiniMax",
+   "name": "MiniMax M3",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 0.3,
+   "outPrice": 1.2,
+   "cachedIn": 0.06,
+   "ctx": 1000000,
+   "maxOut": 131072,
+   "cutoff": null,
+   "license": "open",
+   "modality": "T+I+V",
+   "released": "2026-06",
+   "speed": 85,
+   "bench": {
+    "aa": 45.4,
+    "elo": 1435,
+    "gpqa": 92.9,
+    "swe": 80.5,
+    "hle": 39,
+    "mmmu": 78.1
+   }
+  },
+  {
+   "provider": "MiniMax",
+   "name": "MiniMax M2.7",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 0.3,
+   "outPrice": 1.2,
+   "cachedIn": 0.06,
+   "ctx": null,
+   "maxOut": 131072,
+   "cutoff": null,
+   "license": "open",
+   "modality": "T",
+   "released": null,
+   "speed": 50,
+   "bench": {
+    "aa": 38.9,
+    "elo": 1405,
+    "gpqa": 87.4,
+    "hle": 29.6
+   }
+  },
+  {
+   "provider": "Baidu",
+   "name": "ERNIE 5.1",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 0.59,
+   "outPrice": 2.65,
+   "cachedIn": null,
+   "ctx": 128000,
+   "maxOut": 65536,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T+I",
+   "released": "2026-05",
+   "speed": null,
+   "bench": {
+    "elo": 1468,
+    "aime": 99.6
+   },
+   "selfRep": [
+    "aime"
+   ]
+  },
+  {
+   "provider": "Baidu",
+   "name": "ERNIE 5.0",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 0.6,
+   "outPrice": 2.1,
+   "cachedIn": null,
+   "ctx": 128000,
+   "maxOut": null,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T+I",
+   "released": null,
+   "speed": null,
+   "bench": {
+    "aa": 22.3,
+    "elo": 1444,
+    "gpqa": 77.7,
+    "hle": 13.3
+   }
+  },
+  {
+   "provider": "Meta",
+   "name": "Muse Spark 1.3",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 1.25,
+   "outPrice": 4.25,
+   "cachedIn": 0.15,
+   "ctx": 1048576,
+   "maxOut": null,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T+I+V",
+   "released": "2026-09",
+   "speed": 115,
+   "bench": {
+    "aa": 60.8,
+    "gpqa": 94.1,
+    "hle": 47.5
+   }
+  },
+  {
+   "provider": "Meta",
+   "name": "Muse Spark 1.2",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 1.25,
+   "outPrice": 4.25,
+   "cachedIn": 0.15,
+   "ctx": 1048576,
+   "maxOut": null,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T+I+A+V",
+   "released": "2026-08",
+   "speed": 224,
+   "bench": {
+    "aa": 56.8,
+    "elo": 1488,
+    "gpqa": 90.4,
+    "hle": 45.5
+   }
+  },
+  {
+   "provider": "Meta",
+   "name": "Muse Spark 1.1",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 1.25,
+   "outPrice": 4.25,
+   "cachedIn": null,
+   "ctx": null,
+   "maxOut": null,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T+I+A+V",
+   "released": "2026-07",
+   "speed": 189,
+   "bench": {
+    "aa": 53.2,
+    "elo": 1479,
+    "gpqa": 89.8,
+    "hle": 46.2
+   }
+  },
+  {
+   "provider": "Amazon",
+   "name": "Nova 2 Pro (preview)",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 1.25,
+   "outPrice": 10,
+   "cachedIn": 0.31,
+   "ctx": 1000000,
+   "maxOut": 65536,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T+I+A+V",
+   "released": "2025-12",
+   "speed": 128,
+   "bench": {
+    "aa": 22.1,
+    "gpqa": 78.5,
+    "hle": 9.4
+   }
+  },
+  {
+   "provider": "Amazon",
+   "name": "Nova 2 Omni (preview)",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 0.3,
+   "outPrice": 2.5,
+   "cachedIn": null,
+   "ctx": 1000000,
+   "maxOut": 65536,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T+I+A+V",
+   "released": "2025-12",
+   "speed": null,
+   "bench": {
+    "aa": 21.3,
+    "gpqa": 76,
+    "aime": 89.7,
+    "mmluPro": 80.9,
+    "hle": 7
+   },
+   "selfRep": [
+    "gpqa",
+    "aime",
+    "mmluPro"
+   ]
+  },
+  {
+   "provider": "Amazon",
+   "name": "Nova 2 Lite",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 0.3,
+   "outPrice": 2.5,
+   "cachedIn": 0.075,
+   "ctx": 1000000,
+   "maxOut": 65536,
+   "cutoff": "2025-10",
+   "license": "prop",
+   "modality": "T+I+V",
+   "released": "2025-12",
+   "speed": 191,
+   "bench": {
+    "aa": 20.8,
+    "elo": 1363,
+    "gpqa": 81.1,
+    "hle": 11.6
+   }
+  },
+  {
+   "provider": "Amazon",
+   "name": "Nova Micro",
+   "tier": "small",
+   "reasoning": false,
+   "inPrice": 0.035,
+   "outPrice": 0.14,
+   "cachedIn": null,
+   "ctx": 128000,
+   "maxOut": 10000,
+   "cutoff": "2024-10",
+   "license": "prop",
+   "modality": "T",
+   "released": "2024-12",
+   "speed": 288,
+   "bench": {
+    "aa": 4.4,
+    "gpqa": 35.8,
+    "hle": 4.6
+   }
+  },
+  {
+   "provider": "Cohere",
+   "name": "Command A+",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": null,
+   "outPrice": null,
+   "cachedIn": null,
+   "ctx": 128000,
+   "maxOut": 64000,
+   "cutoff": "2025-04",
+   "license": "open",
+   "modality": "T+I",
+   "released": "2026-05",
+   "speed": 262,
+   "bench": {
+    "aa": 22.8,
+    "gpqa": 76.1,
+    "hle": 12
+   }
+  },
+  {
+   "provider": "Cohere",
+   "name": "Command A",
+   "tier": "mid",
+   "reasoning": false,
+   "inPrice": 2.5,
+   "outPrice": 10,
+   "cachedIn": null,
+   "ctx": 256000,
+   "maxOut": 8000,
+   "cutoff": "2024-06",
+   "license": "open",
+   "modality": "T",
+   "released": "2025-03",
+   "speed": 57,
+   "bench": {
+    "aa": 7.5,
+    "gpqa": 52.7,
+    "hle": 4
+   }
+  },
+  {
+   "provider": "Cohere",
+   "name": "Command R7B",
+   "tier": "small",
+   "reasoning": false,
+   "inPrice": 0.0375,
+   "outPrice": 0.15,
+   "cachedIn": null,
+   "ctx": 128000,
+   "maxOut": 4000,
+   "cutoff": "2024-06",
+   "license": "open",
+   "modality": "T",
+   "released": "2024-12",
+   "speed": null,
+   "bench": {}
+  },
+  {
+   "provider": "Naver",
+   "name": "HyperCLOVA X HCX-007",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 0.84,
+   "outPrice": 3.37,
+   "cachedIn": null,
+   "ctx": 128000,
+   "maxOut": 32768,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T",
+   "released": null,
+   "speed": null,
+   "bench": {}
+  },
+  {
+   "provider": "Upstage",
+   "name": "Solar Pro 4",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 0.3,
+   "outPrice": 1.2,
+   "cachedIn": 0.06,
+   "ctx": 524288,
+   "maxOut": 131072,
+   "cutoff": null,
+   "license": "prop",
+   "modality": "T",
+   "released": "2026-08",
+   "speed": 62,
+   "bench": {
+    "aa": 41.6,
+    "elo": 1377,
+    "gpqa": 89.1,
+    "hle": 29.2
+   }
+  },
+  {
+   "provider": "Upstage",
+   "name": "Solar Pro 3",
+   "tier": "mid",
+   "reasoning": true,
+   "inPrice": 0.15,
+   "outPrice": 0.6,
+   "cachedIn": 0.015,
+   "ctx": 128000,
+   "maxOut": null,
+   "cutoff": "2025-07",
+   "license": "prop",
+   "modality": "T",
+   "released": "2026-01",
+   "speed": 142,
+   "bench": {
+    "aa": 14.5,
+    "gpqa": 72.4,
+    "hle": 10.3
+   }
+  },
+  {
+   "provider": "Upstage",
+   "name": "Solar Pro 2",
+   "tier": "legacy",
+   "reasoning": true,
+   "inPrice": 0.15,
+   "outPrice": 0.6,
+   "cachedIn": 0.015,
+   "ctx": null,
+   "maxOut": null,
+   "cutoff": "2025-03",
+   "license": "prop",
+   "modality": "T",
+   "released": "2025-05",
+   "speed": null,
+   "bench": {
+    "aa": 12.5,
+    "gpqa": 57.8,
+    "hle": 6.1
+   }
+  },
+  {
+   "provider": "LG AI Research",
+   "name": "K-EXAONE 236B",
+   "tier": "flagship",
+   "reasoning": true,
+   "inPrice": 0.2,
+   "outPrice": 0.8,
+   "cachedIn": 0.1,
+   "ctx": 262144,
+   "maxOut": null,
+   "cutoff": "2024-12",
+   "license": "open",
+   "modality": "T",
+   "released": null,
+   "speed": null,
+   "bench": {}
+  }
+ ],
+ "image": [
+  {
+   "provider": "OpenAI",
+   "name": "GPT Image 2 (high)",
+   "price": 0.053,
+   "elo": 1371,
+   "res": "1536px",
+   "released": "2026-04"
+  },
+  {
+   "provider": "Reve",
+   "name": "Reve 2.1",
+   "price": 0.2,
+   "elo": 1326,
+   "res": "4K",
+   "released": "2026-07"
+  },
+  {
+   "provider": "Microsoft",
+   "name": "MAI-Image-2.5",
+   "price": 0.05,
+   "elo": 1254,
+   "res": null,
+   "released": "2026-06"
+  },
+  {
+   "provider": "HiDream",
+   "name": "HiDream-O1-Image-1.5",
+   "price": null,
+   "elo": 1226,
+   "res": null,
+   "released": "2026-06"
+  },
+  {
+   "provider": "Google",
+   "name": "Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
+   "price": 0.0336,
+   "elo": 1284,
+   "res": "4K",
+   "released": "2026-06"
+  },
+  {
+   "provider": "Google",
+   "name": "Nano Banana 2 (Gemini 3.1 Flash Image)",
+   "price": 0.067,
+   "elo": 1317,
+   "res": "4K",
+   "released": "2026-02"
+  },
+  {
+   "provider": "Sourceful",
+   "name": "Riverflow 2.0 Pro",
+   "price": 0.15,
+   "elo": 1249,
+   "res": "4K",
+   "released": "2026-02"
+  },
+  {
+   "provider": "ByteDance",
+   "name": "Seedream 5.0 Pro",
+   "price": 0.045,
+   "elo": 1244,
+   "res": "2K",
+   "released": "2026-07"
+  },
+  {
+   "provider": "Google",
+   "name": "Nano Banana Pro (Gemini 3 Pro Image)",
+   "price": 0.134,
+   "elo": 1241,
+   "res": "4K",
+   "released": "2025-11"
+  },
+  {
+   "provider": "Recraft",
+   "name": "Recraft V4.1 Utility",
+   "price": 0.035,
+   "elo": 1220,
+   "res": null,
+   "released": "2026-05"
+  },
+  {
+   "provider": "xAI",
+   "name": "grok-imagine-image (quality)",
+   "price": 0.05,
+   "elo": 1232,
+   "res": null,
+   "released": "2026-04"
+  },
+  {
+   "provider": "Black Forest Labs",
+   "name": "FLUX.2 [max]",
+   "price": 0.07,
+   "elo": 1233,
+   "res": "4MP",
+   "released": "2025-12"
+  },
+  {
+   "provider": "Ideogram",
+   "name": "Ideogram 3.0",
+   "price": 0.06,
+   "elo": 1098,
+   "res": "2K",
+   "released": "2025-03"
+  },
+  {
+   "provider": "Alibaba Qwen",
+   "name": "Qwen Image 3.0 Pro",
+   "price": 0.04,
+   "elo": null,
+   "res": null,
+   "released": "2026-08"
+  }
+ ],
+ "video": [
+  {
+   "provider": "Google",
+   "name": "Gemini Omni Flash",
+   "price": 0.1,
+   "elo": 1324,
+   "eloI2V": 1368,
+   "maxLen": 10,
+   "res": "720p",
+   "released": "2026-05"
+  },
+  {
+   "provider": "MiniMax",
+   "name": "Hailuo 3.0 (H3)",
+   "price": 0.13,
+   "elo": 1306,
+   "eloI2V": 1350,
+   "maxLen": null,
+   "res": "2K",
+   "released": "2026-07"
+  },
+  {
+   "provider": "xAI",
+   "name": "grok-imagine-video-1.5",
+   "price": 0.08,
+   "elo": null,
+   "eloI2V": 1330,
+   "maxLen": 15,
+   "res": "1080p",
+   "released": "2026-05"
+  },
+  {
+   "provider": "Alibaba",
+   "name": "HappyHorse-1.1",
+   "price": 0.14,
+   "elo": 1263,
+   "eloI2V": 1311,
+   "maxLen": 10,
+   "res": "1080p",
+   "released": "2026-06"
+  },
+  {
+   "provider": "ByteDance",
+   "name": "Seedance 2.0",
+   "price": 0.3,
+   "elo": 1266,
+   "eloI2V": 1339,
+   "maxLen": 15,
+   "res": "1080p",
+   "released": "2026-03"
+  },
+  {
+   "provider": "KlingAI",
+   "name": "Kling 3.0 Pro",
+   "price": 0.168,
+   "elo": 1240,
+   "eloI2V": 1284,
+   "maxLen": 15,
+   "res": "1080p",
+   "released": "2026-02"
+  },
+  {
+   "provider": "xAI",
+   "name": "grok-imagine-video",
+   "price": 0.05,
+   "elo": 1224,
+   "eloI2V": 1325,
+   "maxLen": 15,
+   "res": "720p",
+   "released": "2026-01"
+  },
+  {
+   "provider": "Vidu",
+   "name": "Vidu Q3 Pro",
+   "price": 0.154,
+   "elo": 1217,
+   "eloI2V": 1282,
+   "maxLen": 16,
+   "res": "1080p",
+   "released": "2026-01"
+  },
+  {
+   "provider": "Google",
+   "name": "Veo 3.1",
+   "price": 0.4,
+   "elo": 1201,
+   "eloI2V": 1251,
+   "maxLen": 8,
+   "res": "4K",
+   "released": "2025-10"
+  },
+  {
+   "provider": "Runway",
+   "name": "Gen-4.5",
+   "price": 0.12,
+   "elo": 1214,
+   "eloI2V": 1258,
+   "maxLen": 10,
+   "res": "1080p",
+   "released": "2025-12"
+  },
+  {
+   "provider": "Alibaba",
+   "name": "Wan 2.7",
+   "price": 0.1,
+   "elo": 1218,
+   "eloI2V": 1264,
+   "maxLen": 10,
+   "res": "1080p",
+   "released": "2026-04"
+  },
+  {
+   "provider": "PixVerse",
+   "name": "PixVerse V6",
+   "price": 0.06,
+   "elo": 1211,
+   "eloI2V": 1326,
+   "maxLen": 8,
+   "res": "1080p",
+   "released": "2026-03"
+  }
+ ],
+ "imgedit": [
+  {
+   "provider": "Sourceful",
+   "name": "Riverflow 2.0 Pro",
+   "price": 0.15,
+   "elo": 1284,
+   "released": "2026-02"
+  },
+  {
+   "provider": "OpenAI",
+   "name": "GPT Image 2 (high)",
+   "price": 0.08,
+   "elo": 1258,
+   "released": "2026-04"
+  },
+  {
+   "provider": "Google",
+   "name": "Nano Banana 2 (Gemini 3.1 Flash Image)",
+   "price": 0.067,
+   "elo": 1248,
+   "released": "2026-02"
+  },
+  {
+   "provider": "Microsoft",
+   "name": "MAI-Image-2.5",
+   "price": 0.05,
+   "elo": 1243,
+   "released": "2026-06"
+  },
+  {
+   "provider": "Google",
+   "name": "Nano Banana Pro (Gemini 3 Pro Image)",
+   "price": 0.134,
+   "elo": 1240,
+   "released": "2025-11"
+  },
+  {
+   "provider": "ByteDance",
+   "name": "Seedream 5.0 Pro",
+   "price": 0.045,
+   "elo": 1239,
+   "released": "2026-07"
+  },
+  {
+   "provider": "xAI",
+   "name": "grok-imagine-image (quality)",
+   "price": 0.05,
+   "elo": 1230,
+   "released": "2026-04"
+  },
+  {
+   "provider": "Tencent",
+   "name": "HunyuanImage 3.0 Instruct",
+   "price": 0.12,
+   "elo": 1222,
+   "released": "2026-01"
+  },
+  {
+   "provider": "Luma Labs",
+   "name": "Luma UNI 1 Max",
+   "price": null,
+   "elo": 1219,
+   "released": "2026-05"
+  },
+  {
+   "provider": "Black Forest Labs",
+   "name": "FLUX.1 Kontext [pro]",
+   "price": 0.04,
+   "elo": 1076,
+   "released": "2025-05"
+  }
+ ],
+ "stt": [
+  {
+   "provider": "ElevenLabs",
+   "name": "Scribe v2",
+   "price": 0.22,
+   "priceStream": 0.39,
+   "wer": 2.2,
+   "released": "2026-01"
+  },
+  {
+   "provider": "Microsoft",
+   "name": "MAI-Transcribe-1.5",
+   "price": 0.36,
+   "priceStream": null,
+   "wer": 2.4,
+   "released": null
+  },
+  {
+   "provider": "Google",
+   "name": "Gemini 3 Flash (audio)",
+   "price": 0.82,
+   "priceStream": null,
+   "wer": 2.9,
+   "released": "2025-12"
+  },
+  {
+   "provider": "AssemblyAI",
+   "name": "Universal-3.5 Pro",
+   "price": 0.21,
+   "priceStream": 0.45,
+   "wer": 3.1,
+   "released": "2026-06"
+  },
+  {
+   "provider": "Mistral AI",
+   "name": "Voxtral Mini Transcribe 2",
+   "price": 0.18,
+   "priceStream": 0.36,
+   "wer": 3.6,
+   "released": "2026-02"
+  },
+  {
+   "provider": "OpenAI",
+   "name": "gpt-4o-transcribe",
+   "price": 0.36,
+   "priceStream": null,
+   "wer": 4,
+   "released": "2025-03"
+  },
+  {
+   "provider": "xAI",
+   "name": "Grok STT 1.0",
+   "price": 0.1,
+   "priceStream": 0.2,
+   "wer": 4,
+   "released": "2026-04"
+  },
+  {
+   "provider": "NVIDIA",
+   "name": "Parakeet TDT 0.6B V3",
+   "price": 0.09,
+   "priceStream": null,
+   "wer": 4.5,
+   "released": "2025-08"
+  },
+  {
+   "provider": "Speechmatics",
+   "name": "Melia (Pro batch)",
+   "price": 0.129,
+   "priceStream": null,
+   "wer": 4.9,
+   "released": null
+  },
+  {
+   "provider": "Deepgram",
+   "name": "Nova-3",
+   "price": 0.258,
+   "priceStream": 0.462,
+   "wer": 5.2,
+   "released": "2025-01"
+  },
+  {
+   "provider": "Rev AI",
+   "name": "Machine Transcription",
+   "price": 0.2,
+   "priceStream": null,
+   "wer": 5.9,
+   "released": null
+  }
+ ],
+ "tts": [
+  {
+   "provider": "Alibaba Qwen",
+   "name": "Qwen-Audio-3.0-TTS-Plus",
+   "price": 27.59,
+   "elo": 1229,
+   "released": "2026-07"
+  },
+  {
+   "provider": "Speechify",
+   "name": "Simba 3.2",
+   "price": 10,
+   "elo": 1227,
+   "released": "2026-06"
+  },
+  {
+   "provider": "Google",
+   "name": "Gemini 3.1 Flash TTS",
+   "price": 18.3,
+   "elo": 1210,
+   "released": "2026-04"
+  },
+  {
+   "provider": "Cartesia",
+   "name": "Sonic 3.5",
+   "price": 49,
+   "elo": 1203,
+   "released": "2026-06"
+  },
+  {
+   "provider": "Inworld",
+   "name": "Realtime TTS 1.5 Max",
+   "price": 26,
+   "elo": 1194,
+   "released": null
+  },
+  {
+   "provider": "Smallest.ai",
+   "name": "Lightning V3.1 Pro",
+   "price": 19.5,
+   "elo": 1192,
+   "released": "2026-07"
+  },
+  {
+   "provider": "MiniMax",
+   "name": "Speech 2.8 HD",
+   "price": 100,
+   "elo": 1172,
+   "released": "2026-01"
+  },
+  {
+   "provider": "ElevenLabs",
+   "name": "Eleven v3",
+   "price": 100,
+   "elo": 1171,
+   "released": "2026-02"
+  },
+  {
+   "provider": "Fish Audio",
+   "name": "S2.1 Pro",
+   "price": 15,
+   "elo": 1138,
+   "released": null
+  },
+  {
+   "provider": "Microsoft",
+   "name": "Azure HD 2.5",
+   "price": 22,
+   "elo": 1122,
+   "released": null
+  },
+  {
+   "provider": "OpenAI",
+   "name": "TTS-1 HD",
+   "price": 30,
+   "elo": 1097,
+   "released": "2023-11"
+  },
+  {
+   "provider": "Amazon",
+   "name": "Polly Generative",
+   "price": 30,
+   "elo": 1064,
+   "released": null
+  },
+  {
+   "provider": "Kokoro",
+   "name": "Kokoro 82M (hosted)",
+   "price": 0.65,
+   "elo": 1056,
+   "released": null
+  }
+ ],
+ "embed": [
+  {
+   "provider": "Google",
+   "name": "gemini-embedding-2",
+   "price": 0.2,
+   "mteb": 69.9,
+   "dims": 3072,
+   "maxIn": 8192,
+   "released": "2026-04"
+  },
+  {
+   "provider": "Google",
+   "name": "gemini-embedding-001",
+   "price": 0.15,
+   "mteb": 68.3,
+   "dims": 3072,
+   "maxIn": 2048,
+   "released": "2025-07"
+  },
+  {
+   "provider": "Alibaba Qwen",
+   "name": "text-embedding-v4 (Qwen3)",
+   "price": 0.07,
+   "mteb": null,
+   "dims": 1024,
+   "maxIn": 8192,
+   "released": "2025-06"
+  },
+  {
+   "provider": "Voyage AI",
+   "name": "voyage-4-large",
+   "price": 0.12,
+   "mteb": null,
+   "dims": 1024,
+   "maxIn": 32000,
+   "released": "2026-01"
+  },
+  {
+   "provider": "Voyage AI",
+   "name": "voyage-4",
+   "price": 0.06,
+   "mteb": null,
+   "dims": 1024,
+   "maxIn": 32000,
+   "released": "2026-01"
+  },
+  {
+   "provider": "Voyage AI",
+   "name": "voyage-4-lite",
+   "price": 0.02,
+   "mteb": null,
+   "dims": 1024,
+   "maxIn": 32000,
+   "released": "2026-01"
+  },
+  {
+   "provider": "Jina",
+   "name": "jina-embeddings-v5-text-small",
+   "price": 0.05,
+   "mteb": 67.7,
+   "dims": 1024,
+   "maxIn": 32768,
+   "released": "2026-02"
+  },
+  {
+   "provider": "Cohere",
+   "name": "embed-v4.0",
+   "price": 0.12,
+   "mteb": null,
+   "dims": 1536,
+   "maxIn": 128000,
+   "released": "2025-04"
+  },
+  {
+   "provider": "OpenAI",
+   "name": "text-embedding-3-large",
+   "price": 0.13,
+   "mteb": 58.9,
+   "dims": 3072,
+   "maxIn": 8191,
+   "released": "2024-01"
+  },
+  {
+   "provider": "OpenAI",
+   "name": "text-embedding-3-small",
+   "price": 0.02,
+   "mteb": null,
+   "dims": 1536,
+   "maxIn": 8191,
+   "released": "2024-01"
+  },
+  {
+   "provider": "Mistral AI",
+   "name": "mistral-embed",
+   "price": 0.1,
+   "mteb": null,
+   "dims": 1024,
+   "maxIn": 8192,
+   "released": "2023-12"
+  }
+ ],
+ "music": [
+  {
+   "provider": "Mureka (Kunlun)",
+   "name": "Mureka V9",
+   "price": null,
+   "elo": 1190,
+   "maxLen": null,
+   "released": "2026-07"
+  },
+  {
+   "provider": "Google",
+   "name": "Lyria 3 Pro",
+   "price": 0.08,
+   "elo": 1119,
+   "maxLen": 3,
+   "released": "2026-03"
+  },
+  {
+   "provider": "MiniMax",
+   "name": "Music 3.0",
+   "price": 0.15,
+   "elo": null,
+   "maxLen": 5,
+   "released": "2026-07"
+  },
+  {
+   "provider": "MiniMax",
+   "name": "Music 2.6",
+   "price": 0.15,
+   "elo": 1069,
+   "maxLen": 5,
+   "released": null
+  },
+  {
+   "provider": "ElevenLabs",
+   "name": "Eleven Music v2",
+   "price": 0.45,
+   "elo": 1063,
+   "maxLen": 5,
+   "released": "2026-05"
+  },
+  {
+   "provider": "Stability AI",
+   "name": "Stable Audio 2.5",
+   "price": 0.2,
+   "elo": null,
+   "maxLen": 3,
+   "released": "2025-09"
+  },
+  {
+   "provider": "Treblo",
+   "name": "Sonauto V2.1",
+   "price": 0.06,
+   "elo": 937,
+   "maxLen": null,
+   "released": "2025-06"
+  },
+  {
+   "provider": "Meta",
+   "name": "MusicGen (hosted)",
+   "price": 0.07,
+   "elo": 866,
+   "maxLen": 0.5,
+   "released": "2023-06"
+  }
+ ]
+}

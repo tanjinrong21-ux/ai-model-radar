@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 情报站 · 大模型 / Skill / 工具雷达</title>
+  <meta name="description" content="国内外最新 AI 大模型综合能力排名，多维度筛选；Skill 与热门工具 GitHub 星数榜。让访客及时知道该用什么模型、技能与工具。">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- 科幻背景层 -->
+  <div class="bg-grid"></div>
+  <div class="bg-scan"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-block">
+        <h1 class="site-title">AI 情报站<span class="title-en">MODEL · SKILL · TOOL RADAR</span></h1>
+        <p class="site-sub">实时掌握最新大模型能力，在合适的时机优化你的本地 Hermes 与工作方式</p>
+      </div>
+      <div class="header-meta">
+        <div class="update-chip" id="update-chip">数据加载中…</div>
+        <div class="fx-chip" id="fx-chip"></div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button class="tab-btn active" data-tab="models">🏴‍☠️ 模型能力榜</button>
+    <button class="tab-btn" data-tab="skills">🧩 Skill 榜</button>
+    <button class="tab-btn" data-tab="tools">🛠️ 工具榜</button>
+  </nav>
+
+  <main>
+    <!-- ============ 模型榜 ============ -->
+    <section id="tab-models" class="tab-panel active">
+      <div class="filter-bar">
+        <div class="filter-label">能力维度</div>
+        <div class="filter-group" id="ability-filters">
+          <button class="chip active" data-ability="overall">综合</button>
+          <button class="chip" data-ability="coding">编程开发</button>
+          <button class="chip" data-ability="logic">逻辑推理</button>
+          <button class="chip" data-ability="ppt_html">PPT/HTML</button>
+          <button class="chip" data-ability="vision">视觉</button>
+          <button class="chip" data-ability="audio">语音多模态</button>
+          <button class="chip" data-ability="cost">成本 ¥</button>
+        </div>
+      </div>
+      <div class="filter-bar">
+        <div class="filter-label">访问方式</div>
+        <div class="filter-group" id="access-filters">
+          <button class="chip active" data-access="all">全部</button>
+          <button class="chip" data-access="direct">🟢 国内直连</button>
+          <button class="chip" data-access="vpn">🔴 需翻墙</button>
+        </div>
+      </div>
+      <div class="rank-legend">
+        <span class="legend-item"><i class="dot dot-green"></i>国内直连</span>
+        <span class="legend-item"><i class="dot dot-red"></i>需翻墙</span>
+        <span class="legend-item"><i class="dot dot-gold"></i>榜单 Top3</span>
+        <span class="legend-item muted">* 实践评级维度为预估，待实测校准</span>
+      </div>
+      <div class="rank-list" id="model-grid"></div>
+    </section>
+
+    <!-- ============ Skill 榜 ============ -->
+    <section id="tab-skills" class="tab-panel">
+      <p class="panel-intro">GitHub 星数实时排名的 Agent Skills 仓库——按应用场景筛选，快速找到你当前工作该学的 skill。</p>
+      <div class="filter-bar">
+        <div class="filter-label">应用场景</div>
+        <div class="filter-group" id="scene-filters">
+          <button class="chip active" data-scene="all">全部</button>
+          <button class="chip" data-scene="agent">Agent 框架</button>
+          <button class="chip" data-scene="coding">编码开发</button>
+          <button class="chip" data-scene="docs">文档处理</button>
+          <button class="chip" data-scene="tools">工具集成</button>
+          <button class="chip" data-scene="research">内容采集</button>
+          <button class="chip" data-scene="slides">课件演示</button>
+          <button class="chip" data-scene="design">设计可视化</button>
+          <button class="chip" data-scene="knowledge">知识库</button>
+        </div>
+      </div>
+      <div class="list-container" id="skill-list"></div>
+    </section>
+
+    <!-- ============ 工具榜 ============ -->
+    <section id="tab-tools" class="tab-panel">
+      <p class="panel-intro">热门 AI 工具排名与获得方式——按分类筛选，需要时让路飞去学、去接入。</p>
+      <div class="filter-bar">
+        <div class="filter-label">工具分类</div>
+        <div class="filter-group" id="tool-filters">
+          <button class="chip active" data-toolcat="all">全部</button>
+          <button class="chip" data-toolcat="local">本地部署</button>
+          <button class="chip" data-toolcat="platform">应用平台</button>
+          <button class="chip" data-toolcat="agent">Agent 平台</button>
+          <button class="chip" data-toolcat="ui">界面客户端</button>
+          <button class="chip" data-toolcat="sdk">框架 SDK</button>
+        </div>
+      </div>
+      <div class="list-container" id="tool-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-sources" id="footer-sources"></div>
+    <div class="footer-disclaimer">
+      数据仅供参考，非投资/采购建议。综合=AA智能指数(客观10基准)，编程=SWE-bench Verified，逻辑=GPQA Diamond；
+      PPT/HTML·视觉·语音为「实践评级」(预估，待实测校准)。分数为 null 的维度显示 "—"，表示无公开数据，不编造。
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
