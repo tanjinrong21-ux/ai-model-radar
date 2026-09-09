@@ -1,7 +1,8 @@
 # PROGRESS — AI 情报站网页
 
-> 状态：**✅ 全部完工（乌索普 QA 四轮通过，含 8 场景 skill + 5 分类工具）**
-> 更新时间：2026-09-08 16:30 (UTC+8)
+> 状态：**✅ 已部署上线（GitHub Pages）+ 自动更新闭环**
+> URL：https://tanjinrong21-ux.github.io/ai-model-radar/ ｜ repo: tanjinrong21-ux/ai-model-radar
+> 更新时间：2026-09-09 07:15 (UTC+8)
 
 ## 项目概要
 本地浏览器可直接打开的单页网页，三大板块：模型能力榜 / Skill 榜 / 工具榜。视觉风格：海贼王悬赏令味浓 + AI 科幻深色底。
@@ -43,15 +44,17 @@
 - ✅ 自动更新链路实跑通过（cron 9486dc2d94fc 每日 06:00，last_status=ok）
 - ✅ 乌索普 QA 两轮通过（第1轮 3 退回+2 待确认 → 第2轮 5/5 放行）
 
-## 自动更新机制（已上线）
+## 自动更新机制（已上线，含部署）
 - cron job `9486dc2d94fc`「AI情报站-每日自动更新」，每日 06:00，no_agent 跑 `radar_update.py`
-- wrapper：`C:\Users\et_21\AppData\Local\hermes\scripts\radar_update.py` → 项目 `scripts/fetch_github.py --build`
-- 链路：fetch_github.py（gh api 拉 21 个 repo 星数）→ 更新 skills/tools.json → build.py 合成 data.js
+- wrapper：`C:\Users\et_21\AppData\Local\hermes\scripts\radar_update.py` → 完整链路：
+  1. `fetch_github.py --build`（gh api 并发查 65 个 repo 星数 → build.py 合成 data.js）
+  2. `git add + commit`
+  3. `git push`（绕过 Karing 代理，`-c http.proxy= -c https.proxy=`）
+- push 后 GitHub Pages 自动重新 build → 线上星数每日刷新
 
 ## 遗留 / 待办
-- **v2 可选**：GitHub Pages 公开部署（当前仅本地预览，Tommy 已决议暂缓）
-- **v2 可选**：fetch_models.py 从 aiapiindex prices.json 自动刷新模型价格/benchmark（当前模型数据为手动维护 + 每日星数自动刷新）
 - **数据待 Tommy 实测校准**：PPT/HTML·视觉·语音三个"实践评级"维度的分数是预估，需 Tommy 真实使用后校准
+- **可选**：模型价格/benchmark 自动刷新（fetch_models.py，当前模型数据手动维护 + 星数每日自动）
 
 ## 给 cron 兜底任务的说明
 本文件若标注「全部完工」，cron 任务（job dc3981206ea4，2026-09-08 20:00）应直接结束，无需续做。
