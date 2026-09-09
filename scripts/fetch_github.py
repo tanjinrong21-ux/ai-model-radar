@@ -15,6 +15,7 @@ import shutil
 import subprocess
 import sys
 import datetime
+from concurrent.futures import ThreadPoolExecutor
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE, "data")
@@ -31,10 +32,10 @@ def gh_stars(repo):
             capture_output=True, text=True, timeout=30,
         )
         if r.returncode == 0 and r.stdout.strip().isdigit():
-            return int(r.stdout.strip())
+            return (repo, int(r.stdout.strip()))
     except Exception as e:
         print(f"  [WARN] {repo} 查询失败: {e}")
-    return None
+    return (repo, None)
 
 
 def update_file(name, list_key):
@@ -42,17 +43,21 @@ def update_file(name, list_key):
     with open(p, encoding="utf-8") as f:
         data = json.load(f)
 
+    items = [it for it in data[list_key] if it.get("repo")]
+
+    # 并发查询星数（gh api 串行太慢，65 个 repo 用 8 线程并发）
+    print(f"  [fetch] 并发查询 {len(items)} 个 repo 星数…")
+    with ThreadPoolExecutor(max_workers=4) as ex:
+        results = dict(ex.map(gh_stars, [it["repo"] for it in items]))
+
     changed = 0
-    for item in data[list_key]:
-        repo = item.get("repo")
-        if not repo:
-            continue
-        new_stars = gh_stars(repo)
+    for item in items:
+        repo = item["repo"]
+        new_stars = results.get(repo)
         if new_stars is not None:
             if item.get("stars") != new_stars:
                 changed += 1
             item["stars"] = new_stars
-            print(f"  {repo:36s} ⭐ {new_stars}")
         else:
             print(f"  {repo:36s} ⭐ 查询失败(保留原值 {item.get('stars')})")
 
