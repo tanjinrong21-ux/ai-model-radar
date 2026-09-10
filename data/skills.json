@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "source": "GitHub API (gh) 实查 — 2026-09-09 07:10 UTC",
+    "source": "GitHub API (gh) 实查 — 2026-09-10 00:52 UTC",
     "note": "星数为 GitHub 实时 stargazers_count。scene=应用场景分类，每场景 5 个。",
     "scenes": {
       "agent": "Agent 框架",
@@ -12,7 +12,7 @@
       "design": "设计可视化",
       "knowledge": "知识库"
     },
-    "updated": "2026-09-09 07:10 UTC"
+    "updated": "2026-09-10 00:52 UTC"
   },
   "skills": [
     {

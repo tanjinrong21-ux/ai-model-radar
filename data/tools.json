@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "source": "GitHub API (gh) 实查 — 2026-09-09 07:10 UTC",
+    "source": "GitHub API (gh) 实查 — 2026-09-10 00:52 UTC",
     "note": "星数为 GitHub 实时 stargazers_count。cat=工具分类，每类 5 个。",
     "cats": {
       "local": "本地部署",
@@ -9,7 +9,7 @@
       "ui": "界面客户端",
       "sdk": "框架 SDK"
     },
-    "updated": "2026-09-09 07:10 UTC"
+    "updated": "2026-09-10 00:52 UTC"
   },
   "tools": [
     {
