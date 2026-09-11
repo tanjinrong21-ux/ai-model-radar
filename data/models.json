@@ -4,289 +4,870 @@
     "source_bench_aa": "Artificial Analysis Intelligence Index — via aiapiindex.com, 2026-09-05",
     "source_bench_swe": "SWE-bench Verified — DataLearnerAI 排行榜, 2026-09-04",
     "source_bench_gpqa": "GPQA Diamond — via aiapiindex.com, 2026-09-05",
-    "fx_usd_cny": 6.719397,
-    "fx_date": "2026-09-07",
-    "note": "综合=AA智能指数(客观10基准), 编程=SWE-bench Verified, 逻辑=GPQA Diamond(研究生级科学推理). ppt_html/vision/audio 为「实践评级」(预估,待Tommy实测校准), 无benchmark。分数null=无公开数据,页面显示—。注意: price_cny(人民币价)由 build.py 按汇率动态换算,仅存于生成的 assets/js/data.js,源 models.json 不含该字段。"
+    "fx_usd_cny": 6.728034,
+    "fx_date": "2026-09-11",
+    "note": "综合=AA智能指数(客观10基准), 编程=SWE-bench Verified, 逻辑=GPQA Diamond(研究生级科学推理). ppt_html/vision/audio 为「实践评级」(预估,待Tommy实测校准), 无benchmark。分数null=无公开数据,页面显示—。注意: price_cny(人民币价)由 build.py 按汇率动态换算,仅存于生成的 assets/js/data.js,源 models.json 不含该字段。",
+    "models_refreshed": "2026-09-11 01:35 UTC"
   },
   "models": [
     {
-      "id": "claude-fable-5.1", "name": "Claude Fable 5.1", "vendor": "Anthropic", "country": "US",
-      "access": "vpn", "open": false, "homepage": "https://www.anthropic.com/claude", "docs": "https://docs.anthropic.com/",
-      "release": "2026-09", "ctx": 1000000, "modality": "T+I",
-      "price": {"in": 10, "out": 50},
+      "id": "claude-fable-5.1",
+      "name": "Claude Fable 5.1",
+      "vendor": "Anthropic",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://www.anthropic.com/claude",
+      "docs": "https://docs.anthropic.com/",
+      "release": "2026-09",
+      "ctx": 1000000,
+      "modality": "T+I",
+      "price": {
+        "in": 10,
+        "out": 50
+      },
       "abilities": {
-        "overall": {"score": 65.7, "src": "AA Index 09-05"},
-        "coding": {"score": null, "src": "SWE-bench 无公开数据"},
-        "logic": {"score": 93.7, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 9, "src": "实践评级·预估"},
-        "vision": {"score": 8, "src": "实践评级·预估"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": 65.7,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 93.7,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 9,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": 8,
+          "src": "实践评级·预估"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
-      "id": "claude-opus-5", "name": "Claude Opus 5", "vendor": "Anthropic", "country": "US",
-      "access": "vpn", "open": false, "homepage": "https://www.anthropic.com/claude", "docs": "https://docs.anthropic.com/",
-      "release": "2026-07", "ctx": 1000000, "modality": "T+I",
-      "price": {"in": 5, "out": 25},
+      "id": "claude-opus-5",
+      "name": "Claude Opus 5",
+      "vendor": "Anthropic",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://www.anthropic.com/claude",
+      "docs": "https://docs.anthropic.com/",
+      "release": "2026-07",
+      "ctx": 1000000,
+      "modality": "T+I",
+      "price": {
+        "in": 5,
+        "out": 25
+      },
       "abilities": {
-        "overall": {"score": 63.1, "src": "AA Index 09-05"},
-        "coding": {"score": 96.0, "src": "SWE-bench 09-04"},
-        "logic": {"score": 93.2, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 9, "src": "实践评级·预估"},
-        "vision": {"score": 8, "src": "实践评级·预估"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": 63.1,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": 96.0,
+          "src": "SWE-bench 09-04"
+        },
+        "logic": {
+          "score": 93.2,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 9,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": 8,
+          "src": "实践评级·预估"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
-      "id": "gpt-6-astra", "name": "GPT-6 Astra", "vendor": "OpenAI", "country": "US",
-      "access": "vpn", "open": false, "homepage": "https://openai.com/", "docs": "https://platform.openai.com/docs",
-      "release": "2026-09", "ctx": 1050000, "modality": "T+I",
-      "price": {"in": 10, "out": 50},
+      "id": "gpt-6-astra",
+      "name": "GPT-6 Astra",
+      "vendor": "OpenAI",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://openai.com/",
+      "docs": "https://platform.openai.com/docs",
+      "release": "2026-09",
+      "ctx": 1050000,
+      "modality": "T+I",
+      "price": {
+        "in": 10,
+        "out": 50
+      },
       "abilities": {
-        "overall": {"score": 61.2, "src": "AA Index 09-05"},
-        "coding": {"score": null, "src": "SWE-bench 无公开数据"},
-        "logic": {"score": 96.1, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 9, "src": "实践评级·预估"},
-        "vision": {"score": 8, "src": "实践评级·预估"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": 61.2,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 96.1,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 9,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": 8,
+          "src": "实践评级·预估"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
-      "id": "gpt-5.6-sol", "name": "GPT-5.6 Sol", "vendor": "OpenAI", "country": "US",
-      "access": "vpn", "open": false, "homepage": "https://openai.com/", "docs": "https://platform.openai.com/docs",
-      "release": "2026-07", "ctx": 1050000, "modality": "T+I",
-      "price": {"in": 4, "out": 20},
+      "id": "gpt-5.6-sol",
+      "name": "GPT-5.6 Sol",
+      "vendor": "OpenAI",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://openai.com/",
+      "docs": "https://platform.openai.com/docs",
+      "release": "2026-07",
+      "ctx": 1050000,
+      "modality": "T+I",
+      "price": {
+        "in": 4,
+        "out": 20
+      },
       "abilities": {
-        "overall": {"score": 60.9, "src": "AA Index 09-05"},
-        "coding": {"score": null, "src": "SWE-bench 无公开数据"},
-        "logic": {"score": 94.1, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 9, "src": "实践评级·预估"},
-        "vision": {"score": 8, "src": "实践评级·预估"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": 60.9,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 94.1,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 9,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": 8,
+          "src": "实践评级·预估"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
-      "id": "grok-4.6", "name": "Grok 4.6", "vendor": "xAI", "country": "US",
-      "access": "vpn", "open": false, "homepage": "https://x.ai/", "docs": "https://docs.x.ai/",
-      "release": "2026-06", "ctx": 500000, "modality": "T+I",
-      "price": {"in": 2, "out": 6},
+      "id": "grok-4.6",
+      "name": "Grok 4.6",
+      "vendor": "xAI",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://x.ai/",
+      "docs": "https://docs.x.ai/",
+      "release": "2026-06",
+      "ctx": 500000,
+      "modality": "T+I",
+      "price": {
+        "in": 2,
+        "out": 6
+      },
       "abilities": {
-        "overall": {"score": 60.9, "src": "AA Index 09-05"},
-        "coding": {"score": null, "src": "SWE-bench 无公开数据"},
-        "logic": {"score": 94.9, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 8, "src": "实践评级·预估"},
-        "vision": {"score": 7, "src": "实践评级·预估"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": 60.9,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 94.9,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 8,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": 7,
+          "src": "实践评级·预估"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
-      "id": "muse-spark-1.3", "name": "Muse Spark 1.3", "vendor": "Meta", "country": "US",
-      "access": "vpn", "open": false, "homepage": "https://ai.meta.com/", "docs": "https://ai.meta.com/",
-      "release": "2026-08", "ctx": 1048000, "modality": "T+I+V",
-      "price": {"in": 1.25, "out": 4.25},
+      "id": "muse-spark-1.3",
+      "name": "Muse Spark 1.3",
+      "vendor": "Meta",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://ai.meta.com/",
+      "docs": "https://ai.meta.com/",
+      "release": "2026-08",
+      "ctx": 1048576,
+      "modality": "T+I+V",
+      "price": {
+        "in": 1.25,
+        "out": 4.25
+      },
       "abilities": {
-        "overall": {"score": 60.8, "src": "AA Index 09-05"},
-        "coding": {"score": null, "src": "SWE-bench 无公开数据"},
-        "logic": {"score": 94.1, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 7, "src": "实践评级·预估"},
-        "vision": {"score": 8, "src": "实践评级·预估"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": 60.8,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 94.1,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 7,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": 8,
+          "src": "实践评级·预估"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
-      "id": "gemini-3.1-pro", "name": "Gemini 3.1 Pro", "vendor": "Google", "country": "US",
-      "access": "vpn", "open": false, "homepage": "https://gemini.google.com/", "docs": "https://ai.google.dev/",
-      "release": "2026-02", "ctx": 1048000, "modality": "T+I+A+V",
-      "price": {"in": 2, "out": 12},
+      "id": "gemini-3.1-pro",
+      "name": "Gemini 3.1 Pro",
+      "vendor": "Google",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://gemini.google.com/",
+      "docs": "https://ai.google.dev/",
+      "release": "2026-02",
+      "ctx": 1048576,
+      "modality": "T+I+A+V",
+      "price": {
+        "in": 2,
+        "out": 12
+      },
       "abilities": {
-        "overall": {"score": 47.7, "src": "AA Index 09-05"},
-        "coding": {"score": 80.6, "src": "SWE-bench 09-04"},
-        "logic": {"score": 94.1, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 8, "src": "实践评级·预估"},
-        "vision": {"score": 9, "src": "实践评级·预估"},
-        "audio": {"score": 9, "src": "实践评级·预估"}
+        "overall": {
+          "score": 47.7,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": 80.6,
+          "src": "SWE-bench 09-04"
+        },
+        "logic": {
+          "score": 94.1,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 8,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": 9,
+          "src": "实践评级·预估"
+        },
+        "audio": {
+          "score": 9,
+          "src": "实践评级·预估"
+        }
       }
     },
     {
-      "id": "gemini-3.8-flash", "name": "Gemini 3.8 Flash", "vendor": "Google", "country": "US",
-      "access": "vpn", "open": false, "homepage": "https://gemini.google.com/", "docs": "https://ai.google.dev/",
-      "release": "2026-08", "ctx": 1048000, "modality": "T+I+A+V",
-      "price": {"in": 0.75, "out": 3.75},
+      "id": "gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "vendor": "Google",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://gemini.google.com/",
+      "docs": "https://ai.google.dev/",
+      "release": "2026-08",
+      "ctx": 1048576,
+      "modality": "T+I+A+V",
+      "price": {
+        "in": 0.75,
+        "out": 3.75
+      },
       "abilities": {
-        "overall": {"score": 58.7, "src": "AA Index 09-05"},
-        "coding": {"score": null, "src": "SWE-bench 无公开数据"},
-        "logic": {"score": 95.3, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 7, "src": "实践评级·预估"},
-        "vision": {"score": 9, "src": "实践评级·预估"},
-        "audio": {"score": 9, "src": "实践评级·预估"}
+        "overall": {
+          "score": 58.7,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 95.3,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 7,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": 9,
+          "src": "实践评级·预估"
+        },
+        "audio": {
+          "score": 9,
+          "src": "实践评级·预估"
+        }
       }
     },
     {
-      "id": "gpt-5.5", "name": "GPT-5.5", "vendor": "OpenAI", "country": "US",
-      "access": "vpn", "open": false, "homepage": "https://openai.com/", "docs": "https://platform.openai.com/docs",
-      "release": "2026-04", "ctx": 1050000, "modality": "T+I",
-      "price": {"in": 5, "out": 30},
+      "id": "gpt-5.5",
+      "name": "GPT-5.5",
+      "vendor": "OpenAI",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://openai.com/",
+      "docs": "https://platform.openai.com/docs",
+      "release": "2026-04",
+      "ctx": 1050000,
+      "modality": "T+I",
+      "price": {
+        "in": 5,
+        "out": 30
+      },
       "abilities": {
-        "overall": {"score": 56.3, "src": "AA Index 09-05"},
-        "coding": {"score": null, "src": "SWE-bench 无公开数据"},
-        "logic": {"score": 93.5, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 8, "src": "实践评级·预估"},
-        "vision": {"score": 8, "src": "实践评级·预估"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": 56.3,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 93.5,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 8,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": 8,
+          "src": "实践评级·预估"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
-      "id": "claude-sonnet-5", "name": "Claude Sonnet 5", "vendor": "Anthropic", "country": "US",
-      "access": "vpn", "open": false, "homepage": "https://www.anthropic.com/claude", "docs": "https://docs.anthropic.com/",
-      "release": "2026-06", "ctx": 1000000, "modality": "T+I",
-      "price": {"in": 2, "out": 10},
+      "id": "claude-sonnet-5",
+      "name": "Claude Sonnet 5",
+      "vendor": "Anthropic",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://www.anthropic.com/claude",
+      "docs": "https://docs.anthropic.com/",
+      "release": "2026-06",
+      "ctx": 1000000,
+      "modality": "T+I",
+      "price": {
+        "in": 2,
+        "out": 10
+      },
       "abilities": {
-        "overall": {"score": 55.3, "src": "AA Index 09-05"},
-        "coding": {"score": 85.2, "src": "SWE-bench 09-04"},
-        "logic": {"score": 91.1, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 9, "src": "实践评级·预估"},
-        "vision": {"score": 7, "src": "实践评级·预估"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": 55.3,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": 85.2,
+          "src": "SWE-bench 09-04"
+        },
+        "logic": {
+          "score": 91.1,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 9,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": 7,
+          "src": "实践评级·预估"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
-      "id": "kimi-k3", "name": "Kimi K3", "vendor": "Moonshot AI", "country": "CN",
-      "access": "direct", "open": false, "homepage": "https://www.moonshot.cn/", "docs": "https://platform.moonshot.cn/",
-      "release": "2026-06", "ctx": 1048000, "modality": "T+I+V",
-      "price": {"in": 3, "out": 15},
+      "id": "kimi-k3",
+      "name": "Kimi K3",
+      "vendor": "Moonshot AI",
+      "country": "CN",
+      "access": "direct",
+      "open": false,
+      "homepage": "https://www.moonshot.cn/",
+      "docs": "https://platform.moonshot.cn/",
+      "release": "2026-06",
+      "ctx": 1048576,
+      "modality": "T+I+V",
+      "price": {
+        "in": 3,
+        "out": 15
+      },
       "abilities": {
-        "overall": {"score": 59.7, "src": "AA Index 09-05"},
-        "coding": {"score": null, "src": "SWE-bench 无公开数据"},
-        "logic": {"score": 93.5, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 8, "src": "实践评级·预估"},
-        "vision": {"score": 8, "src": "实践评级·预估"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": 59.7,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 93.5,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 8,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": 8,
+          "src": "实践评级·预估"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
-      "id": "glm-5.3", "name": "GLM-5.3", "vendor": "智谱 AI (Z.ai)", "country": "CN",
-      "access": "direct", "open": true, "homepage": "https://www.z.ai/", "docs": "https://docs.z.ai/",
-      "release": "2026-08", "ctx": 1000000, "modality": "T",
-      "price": {"in": 1.4, "out": 4.4},
+      "id": "glm-5.3",
+      "name": "GLM-5.3",
+      "vendor": "智谱 AI (Z.ai)",
+      "country": "CN",
+      "access": "direct",
+      "open": true,
+      "homepage": "https://www.z.ai/",
+      "docs": "https://docs.z.ai/",
+      "release": "2026-08",
+      "ctx": 1000000,
+      "modality": "T",
+      "price": {
+        "in": 1.4,
+        "out": 4.4
+      },
       "abilities": {
-        "overall": {"score": 59.5, "src": "AA Index 09-05"},
-        "coding": {"score": null, "src": "SWE-bench 无公开数据"},
-        "logic": {"score": 91.7, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 8, "src": "实践评级·预估"},
-        "vision": {"score": null, "src": "纯文本,不支持视觉"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": 59.5,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 91.7,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 8,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": null,
+          "src": "纯文本,不支持视觉"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
-      "id": "qwen3.8-max", "name": "Qwen3.8-Max", "vendor": "阿里云 通义千问", "country": "CN",
-      "access": "direct", "open": true, "homepage": "https://tongyi.aliyun.com/", "docs": "https://www.alibabacloud.com/help/zh/model-studio/",
-      "release": "2026-08", "ctx": 1000000, "modality": "T",
-      "price": {"in": 2, "out": 6},
+      "id": "qwen3.8-max",
+      "name": "Qwen3.8-Max",
+      "vendor": "阿里云 通义千问",
+      "country": "CN",
+      "access": "direct",
+      "open": true,
+      "homepage": "https://tongyi.aliyun.com/",
+      "docs": "https://www.alibabacloud.com/help/zh/model-studio/",
+      "release": "2026-08",
+      "ctx": 1000000,
+      "modality": "T",
+      "price": {
+        "in": 2,
+        "out": 6
+      },
       "abilities": {
-        "overall": {"score": 58.1, "src": "AA Index 09-05"},
-        "coding": {"score": null, "src": "SWE-bench 无公开数据"},
-        "logic": {"score": 92.7, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 8, "src": "实践评级·预估"},
-        "vision": {"score": null, "src": "纯文本,不支持视觉"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": 58.1,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 92.7,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 8,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": null,
+          "src": "纯文本,不支持视觉"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
-      "id": "deepseek-v4-pro", "name": "DeepSeek V4 Pro", "vendor": "DeepSeek 深度求索", "country": "CN",
-      "access": "direct", "open": true, "homepage": "https://platform.deepseek.com/", "docs": "https://api-docs.deepseek.com/",
-      "release": "2026-06", "ctx": 1000000, "modality": "T",
-      "price": {"in": 1.32, "out": 3.96},
+      "id": "deepseek-v4-pro",
+      "name": "DeepSeek V4 Pro",
+      "vendor": "DeepSeek 深度求索",
+      "country": "CN",
+      "access": "direct",
+      "open": true,
+      "homepage": "https://platform.deepseek.com/",
+      "docs": "https://api-docs.deepseek.com/",
+      "release": "2026-06",
+      "ctx": 1000000,
+      "modality": "T",
+      "price": {
+        "in": 1.32,
+        "out": 3.96
+      },
       "abilities": {
-        "overall": {"score": 53.2, "src": "AA Index 09-05"},
-        "coding": {"score": 80.6, "src": "SWE-bench 09-04"},
-        "logic": {"score": 92.8, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 8, "src": "实践评级·预估"},
-        "vision": {"score": null, "src": "纯文本,不支持视觉"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": 53.2,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": 80.6,
+          "src": "SWE-bench 09-04"
+        },
+        "logic": {
+          "score": 92.8,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 8,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": null,
+          "src": "纯文本,不支持视觉"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
-      "id": "deepseek-v4-flash", "name": "DeepSeek V4 Flash", "vendor": "DeepSeek 深度求索", "country": "CN",
-      "access": "direct", "open": true, "homepage": "https://platform.deepseek.com/", "docs": "https://api-docs.deepseek.com/",
-      "release": "2026-06", "ctx": 1000000, "modality": "T",
-      "price": {"in": 0.44, "out": 1.32},
+      "id": "deepseek-v4-flash",
+      "name": "DeepSeek V4 Flash",
+      "vendor": "DeepSeek 深度求索",
+      "country": "CN",
+      "access": "direct",
+      "open": true,
+      "homepage": "https://platform.deepseek.com/",
+      "docs": "https://api-docs.deepseek.com/",
+      "release": "2026-06",
+      "ctx": 1000000,
+      "modality": "T",
+      "price": {
+        "in": 0.44,
+        "out": 1.32
+      },
       "abilities": {
-        "overall": {"score": 51.8, "src": "AA Index 09-05"},
-        "coding": {"score": 79.0, "src": "SWE-bench 09-04"},
-        "logic": {"score": 90.8, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 7, "src": "实践评级·预估"},
-        "vision": {"score": null, "src": "纯文本,不支持视觉"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": 51.8,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": 79.0,
+          "src": "SWE-bench 09-04"
+        },
+        "logic": {
+          "score": 90.8,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 7,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": null,
+          "src": "纯文本,不支持视觉"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
-      "id": "glm-5.3-flash", "name": "GLM-5.3-Flash", "vendor": "智谱 AI (Z.ai)", "country": "CN",
-      "access": "direct", "open": true, "homepage": "https://www.z.ai/", "docs": "https://docs.z.ai/",
-      "release": "2026-08", "ctx": 1000000, "modality": "T+I",
-      "price": {"in": 0.15, "out": 0.5},
+      "id": "glm-5.3-flash",
+      "name": "GLM-5.3-Flash",
+      "vendor": "智谱 AI (Z.ai)",
+      "country": "CN",
+      "access": "direct",
+      "open": true,
+      "homepage": "https://www.z.ai/",
+      "docs": "https://docs.z.ai/",
+      "release": "2026-08",
+      "ctx": 1000000,
+      "modality": "T+I",
+      "price": {
+        "in": 0.15,
+        "out": 0.5
+      },
       "abilities": {
-        "overall": {"score": 57.5, "src": "AA Index 09-05"},
-        "coding": {"score": null, "src": "SWE-bench 无公开数据"},
-        "logic": {"score": 91.2, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 7, "src": "实践评级·预估"},
-        "vision": {"score": 6, "src": "实践评级·预估"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": 57.5,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 91.2,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 7,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": 6,
+          "src": "实践评级·预估"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
-      "id": "minimax-m3", "name": "MiniMax M3", "vendor": "MiniMax", "country": "CN",
-      "access": "direct", "open": false, "homepage": "https://www.minimaxi.com/", "docs": "https://www.minimaxi.com/",
-      "release": "2026-06", "ctx": 1000000, "modality": "T+I+V",
-      "price": {"in": 0.3, "out": 1.2},
+      "id": "minimax-m3",
+      "name": "MiniMax M3",
+      "vendor": "MiniMax",
+      "country": "CN",
+      "access": "direct",
+      "open": false,
+      "homepage": "https://www.minimaxi.com/",
+      "docs": "https://www.minimaxi.com/",
+      "release": "2026-06",
+      "ctx": 1000000,
+      "modality": "T+I+V",
+      "price": {
+        "in": 0.3,
+        "out": 1.2
+      },
       "abilities": {
-        "overall": {"score": 45.4, "src": "AA Index 09-05"},
-        "coding": {"score": null, "src": "SWE-bench 无公开数据"},
-        "logic": {"score": 92.9, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 7, "src": "实践评级·预估"},
-        "vision": {"score": 8, "src": "实践评级·预估"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": 45.4,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 92.9,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 7,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": 8,
+          "src": "实践评级·预估"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
-      "id": "qwen3.7-plus", "name": "Qwen3.7-Plus", "vendor": "阿里云 通义千问", "country": "CN",
-      "access": "direct", "open": false, "homepage": "https://tongyi.aliyun.com/", "docs": "https://www.alibabacloud.com/help/zh/model-studio/",
-      "release": "2026-06", "ctx": 1000000, "modality": "T+I+V",
-      "price": {"in": 0.4, "out": 1.6},
+      "id": "qwen3.7-plus",
+      "name": "Qwen3.7-Plus",
+      "vendor": "阿里云 通义千问",
+      "country": "CN",
+      "access": "direct",
+      "open": false,
+      "homepage": "https://tongyi.aliyun.com/",
+      "docs": "https://www.alibabacloud.com/help/zh/model-studio/",
+      "release": "2026-06",
+      "ctx": 1000000,
+      "modality": "T+I+V",
+      "price": {
+        "in": 0.4,
+        "out": 1.6
+      },
       "abilities": {
-        "overall": {"score": 39.4, "src": "AA Index 09-05"},
-        "coding": {"score": null, "src": "SWE-bench 无公开数据"},
-        "logic": {"score": 90.0, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 7, "src": "实践评级·预估"},
-        "vision": {"score": 7, "src": "实践评级·预估"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": 39.4,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 90.0,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 7,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": 7,
+          "src": "实践评级·预估"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
-      "id": "kimi-k2.6", "name": "Kimi K2.6", "vendor": "Moonshot AI", "country": "CN",
-      "access": "direct", "open": true, "homepage": "https://www.moonshot.cn/", "docs": "https://platform.moonshot.cn/",
-      "release": "2026-03", "ctx": 262000, "modality": "T+I+V",
-      "price": {"in": 0.95, "out": 4},
+      "id": "kimi-k2.6",
+      "name": "Kimi K2.6",
+      "vendor": "Moonshot AI",
+      "country": "CN",
+      "access": "direct",
+      "open": true,
+      "homepage": "https://www.moonshot.cn/",
+      "docs": "https://platform.moonshot.cn/",
+      "release": "2026-03",
+      "ctx": 262144,
+      "modality": "T+I+V",
+      "price": {
+        "in": 0.95,
+        "out": 4
+      },
       "abilities": {
-        "overall": {"score": 45.1, "src": "AA Index 09-05"},
-        "coding": {"score": 80.2, "src": "SWE-bench 09-04"},
-        "logic": {"score": 91.1, "src": "GPQA 09-05"},
-        "ppt_html": {"score": 7, "src": "实践评级·预估"},
-        "vision": {"score": 7, "src": "实践评级·预估"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": 45.1,
+          "src": "AA Index 09-05"
+        },
+        "coding": {
+          "score": 80.2,
+          "src": "SWE-bench 09-04"
+        },
+        "logic": {
+          "score": 91.1,
+          "src": "GPQA 09-05"
+        },
+        "ppt_html": {
+          "score": 7,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": 7,
+          "src": "实践评级·预估"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
-      "id": "ernie-5.1", "name": "文心 ERNIE 5.1", "vendor": "百度", "country": "CN",
-      "access": "direct", "open": false, "homepage": "https://yiyan.baidu.com/", "docs": "https://cloud.baidu.com/product/qianfan",
-      "release": "2026-06", "ctx": 128000, "modality": "T+I",
-      "price": {"in": 0.59, "out": 2.65},
+      "id": "ernie-5.1",
+      "name": "文心 ERNIE 5.1",
+      "vendor": "百度",
+      "country": "CN",
+      "access": "direct",
+      "open": false,
+      "homepage": "https://yiyan.baidu.com/",
+      "docs": "https://cloud.baidu.com/product/qianfan",
+      "release": "2026-06",
+      "ctx": 128000,
+      "modality": "T+I",
+      "price": {
+        "in": 0.59,
+        "out": 2.65
+      },
       "abilities": {
-        "overall": {"score": null, "src": "无 AA 公开数据"},
-        "coding": {"score": null, "src": "SWE-bench 无公开数据"},
-        "logic": {"score": null, "src": "GPQA 无公开数据"},
-        "ppt_html": {"score": 6, "src": "实践评级·预估"},
-        "vision": {"score": 6, "src": "实践评级·预估"},
-        "audio": {"score": null, "src": "不支持语音"}
+        "overall": {
+          "score": null,
+          "src": "无 AA 公开数据"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": null,
+          "src": "GPQA 无公开数据"
+        },
+        "ppt_html": {
+          "score": 6,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": 6,
+          "src": "实践评级·预估"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     }
   ]

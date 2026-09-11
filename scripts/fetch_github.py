@@ -15,17 +15,32 @@ import shutil
 import subprocess
 import sys
 import datetime
+import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE, "data")
 
-# gh CLI 路径（cron 环境 PATH 可能不含 GitHub CLI，回退到标准安装路径）
+# gh CLI 路径（本地 fallback；GitHub Actions 环境用 GITHUB_TOKEN）
 GH = shutil.which("gh") or r"C:\Program Files\GitHub CLI\gh.exe"
 
 
 def gh_stars(repo):
-    """通过 gh api 查询仓库星数，失败返回 None。"""
+    """查询仓库星数，失败返回 (repo, None)。
+    GitHub Actions 环境用 GITHUB_TOKEN 直调 API；本地用 gh CLI。"""
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        try:
+            req = urllib.request.Request(
+                f"https://api.github.com/repos/{repo}",
+                headers={"Authorization": f"Bearer {token}", "User-Agent": "ai-model-radar/1.0"},
+            )
+            with urllib.request.urlopen(req, timeout=30) as r:
+                d = json.loads(r.read().decode("utf-8"))
+            return (repo, d.get("stargazers_count"))
+        except Exception as e:
+            print(f"  [WARN] {repo} 查询失败: {e}")
+            return (repo, None)
     try:
         r = subprocess.run(
             [GH, "api", f"repos/{repo}", "--jq", ".stargazers_count"],
