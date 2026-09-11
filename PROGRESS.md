@@ -44,17 +44,18 @@
 - ✅ 自动更新链路实跑通过（cron 9486dc2d94fc 每日 06:00，last_status=ok）
 - ✅ 乌索普 QA 两轮通过（第1轮 3 退回+2 待确认 → 第2轮 5/5 放行）
 
-## 自动更新机制（已上线，含部署）
-- cron job `9486dc2d94fc`「AI情报站-每日自动更新」，每日 06:00，no_agent 跑 `radar_update.py`
-- wrapper：`C:\Users\et_21\AppData\Local\hermes\scripts\radar_update.py` → 完整链路：
-  1. `fetch_github.py --build`（gh api 并发查 65 个 repo 星数 → build.py 合成 data.js）
-  2. `git add + commit`
-  3. `git push`（绕过 Karing 代理，`-c http.proxy= -c https.proxy=`）
-- push 后 GitHub Pages 自动重新 build → 线上星数每日刷新
+## 自动更新机制（GitHub Actions，每周云端自动，不依赖电脑开机）
+- `.github/workflows/update.yml`：每周日 22:00 UTC（周一 06:00 北京时间）自动触发，也可手动 workflow_dispatch
+- 云端链路（ubuntu runner）：
+  1. `fetch_models.py`：拉 aiapiindex prices.json（价格/AA综合/GPQA逻辑/上下文/模态）+ open.er-api 汇率 → 更新 models.json
+  2. `fetch_github.py --build`：GITHUB_TOKEN 并发查 65 repo 星数 → build.py 合成 data.js
+  3. `git commit + push`（GITHUB_TOKEN，permissions: contents: write）→ GitHub Pages 自动重建
+- 已实测：workflow run 34551321225 success，自动 push commit 3718cbc，线上 data.js 更新到 01:36 UTC
+- 本地 cron（原 9486dc2d94fc）已删除，避免与 Actions 双 push 冲突
 
 ## 遗留 / 待办
 - **数据待 Tommy 实测校准**：PPT/HTML·视觉·语音三个"实践评级"维度的分数是预估，需 Tommy 真实使用后校准
-- **可选**：模型价格/benchmark 自动刷新（fetch_models.py，当前模型数据手动维护 + 星数每日自动）
+- **手动维护字段**：编程分（SWE-bench，来自 DataLearner）、访问方式、官网链接——这些 fetch_models.py 不自动刷新，需手动维护
 
 ## 给 cron 兜底任务的说明
 本文件若标注「全部完工」，cron 任务（job dc3981206ea4，2026-09-08 20:00）应直接结束，无需续做。
