@@ -4,10 +4,10 @@
     "source_bench_aa": "Artificial Analysis Intelligence Index — via aiapiindex.com, 2026-09-05",
     "source_bench_swe": "SWE-bench Verified — DataLearnerAI 排行榜, 2026-09-04",
     "source_bench_gpqa": "GPQA Diamond — via aiapiindex.com, 2026-09-05",
-    "fx_usd_cny": 6.728034,
-    "fx_date": "2026-09-11",
+    "fx_usd_cny": 6.730863,
+    "fx_date": "2026-09-13",
     "note": "综合=AA智能指数(客观10基准), 编程=SWE-bench Verified, 逻辑=GPQA Diamond(研究生级科学推理). ppt_html/vision/audio 为「实践评级」(预估,待Tommy实测校准), 无benchmark。分数null=无公开数据,页面显示—。注意: price_cny(人民币价)由 build.py 按汇率动态换算,仅存于生成的 assets/js/data.js,源 models.json 不含该字段。",
-    "models_refreshed": "2026-09-11 01:36 UTC"
+    "models_refreshed": "2026-09-13 23:54 UTC"
   },
   "models": [
     {
