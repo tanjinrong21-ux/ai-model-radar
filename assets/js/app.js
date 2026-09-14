@@ -118,7 +118,7 @@
           '<span class="no">NO.</span><span class="num">' + rank + '</span>' +
         '</div>' +
         '<div class="rank-main">' +
-          '<div class="rank-name">' + m.name + '</div>' +
+          '<div class="rank-name">' + m.name + (m.note ? ' <span class="model-note">' + m.note + '</span>' : '') + '</div>' +
           '<div class="rank-vendor">' + m.vendor + ' · ' + m.country + '</div>' +
           '<div class="rank-abilities">' + abChips + '</div>' +
         '</div>' +

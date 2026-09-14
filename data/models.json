@@ -4,10 +4,10 @@
     "source_bench_aa": "Artificial Analysis Intelligence Index — via aiapiindex.com, 2026-09-05",
     "source_bench_swe": "SWE-bench Verified — DataLearnerAI 排行榜, 2026-09-04",
     "source_bench_gpqa": "GPQA Diamond — via aiapiindex.com, 2026-09-05",
-    "fx_usd_cny": 6.728034,
-    "fx_date": "2026-09-11",
+    "fx_usd_cny": 6.715584,
+    "fx_date": "2026-09-14",
     "note": "综合=AA智能指数(客观10基准), 编程=SWE-bench Verified, 逻辑=GPQA Diamond(研究生级科学推理). ppt_html/vision/audio 为「实践评级」(预估,待Tommy实测校准), 无benchmark。分数null=无公开数据,页面显示—。注意: price_cny(人民币价)由 build.py 按汇率动态换算,仅存于生成的 assets/js/data.js,源 models.json 不含该字段。",
-    "models_refreshed": "2026-09-11 01:36 UTC"
+    "models_refreshed": "2026-09-14 14:36 UTC"
   },
   "models": [
     {
@@ -610,6 +610,50 @@
           "score": null,
           "src": "不支持语音"
         }
+      },
+      "note": "DeepSeek 保留供应"
+    },
+    {
+      "id": "deepseek-v4.1-flash",
+      "name": "DeepSeek V4.1 Flash",
+      "vendor": "DeepSeek 深度求索",
+      "country": "CN",
+      "access": "direct",
+      "open": true,
+      "homepage": "https://platform.deepseek.com/",
+      "docs": "https://api-docs.deepseek.com/",
+      "release": "2026-09",
+      "ctx": 1000000,
+      "modality": "T+I+V",
+      "price": {
+        "in": 0.3,
+        "out": 1.2
+      },
+      "abilities": {
+        "overall": {
+          "score": null,
+          "src": "待 aiapiindex 收录(2026-09-10发布)"
+        },
+        "coding": {
+          "score": 90.6,
+          "src": "Terminal-Bench 2.1 官方 09-10"
+        },
+        "logic": {
+          "score": null,
+          "src": "待收录"
+        },
+        "ppt_html": {
+          "score": 8,
+          "src": "实践评级·预估"
+        },
+        "vision": {
+          "score": 8,
+          "src": "实践评级·预估(原生多模态)"
+        },
+        "audio": {
+          "score": null,
+          "src": "不支持语音"
+        }
       }
     },
     {
@@ -653,7 +697,8 @@
           "score": null,
           "src": "不支持语音"
         }
-      }
+      },
+      "note": "V4.1 Flash 发布后退役"
     },
     {
       "id": "glm-5.3-flash",
@@ -867,6 +912,446 @@
         "audio": {
           "score": null,
           "src": "不支持语音"
+        }
+      }
+    },
+    {
+      "id": "gpt-56-terra",
+      "name": "GPT-5.6 Terra",
+      "vendor": "OpenAI",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://openai.com/",
+      "docs": "https://openai.com/",
+      "release": "2026-07",
+      "ctx": 1050000,
+      "modality": "T+I",
+      "price": {
+        "in": 2,
+        "out": 12
+      },
+      "note": "自动收录·待复核",
+      "abilities": {
+        "overall": {
+          "score": 56.6,
+          "src": "AA Index 2026-09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 92.5,
+          "src": "GPQA 2026-09-05"
+        },
+        "ppt_html": {
+          "score": null,
+          "src": "待复核"
+        },
+        "vision": {
+          "score": null,
+          "src": "待复核"
+        },
+        "audio": {
+          "score": null,
+          "src": "待复核"
+        }
+      }
+    },
+    {
+      "id": "gpt-55-pro",
+      "name": "GPT-5.5 Pro",
+      "vendor": "OpenAI",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://openai.com/",
+      "docs": "https://openai.com/",
+      "release": "2026-04",
+      "ctx": 1050000,
+      "modality": "T+I",
+      "price": {
+        "in": 30,
+        "out": 180
+      },
+      "note": "自动收录·待复核",
+      "abilities": {
+        "overall": {
+          "score": null,
+          "src": "无 AA 公开数据"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 93.9,
+          "src": "GPQA 2026-09-05"
+        },
+        "ppt_html": {
+          "score": null,
+          "src": "待复核"
+        },
+        "vision": {
+          "score": null,
+          "src": "待复核"
+        },
+        "audio": {
+          "score": null,
+          "src": "待复核"
+        }
+      }
+    },
+    {
+      "id": "gpt-53-codex",
+      "name": "GPT-5.3 Codex",
+      "vendor": "OpenAI",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://openai.com/",
+      "docs": "https://openai.com/",
+      "release": "",
+      "ctx": 400000,
+      "modality": "T+I",
+      "price": {
+        "in": 1.75,
+        "out": 14
+      },
+      "note": "自动收录·待复核",
+      "abilities": {
+        "overall": {
+          "score": 45.5,
+          "src": "AA Index 2026-09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 91.5,
+          "src": "GPQA 2026-09-05"
+        },
+        "ppt_html": {
+          "score": null,
+          "src": "待复核"
+        },
+        "vision": {
+          "score": null,
+          "src": "待复核"
+        },
+        "audio": {
+          "score": null,
+          "src": "待复核"
+        }
+      }
+    },
+    {
+      "id": "grok-43",
+      "name": "Grok 4.3",
+      "vendor": "xAI",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://x.ai/",
+      "docs": "https://x.ai/",
+      "release": "2026-04",
+      "ctx": 1000000,
+      "modality": "T+I",
+      "price": {
+        "in": 1.25,
+        "out": 2.5
+      },
+      "note": "自动收录·待复核",
+      "abilities": {
+        "overall": {
+          "score": 37.9,
+          "src": "AA Index 2026-09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 90.1,
+          "src": "GPQA 2026-09-05"
+        },
+        "ppt_html": {
+          "score": null,
+          "src": "待复核"
+        },
+        "vision": {
+          "score": null,
+          "src": "待复核"
+        },
+        "audio": {
+          "score": null,
+          "src": "待复核"
+        }
+      }
+    },
+    {
+      "id": "grok-build-01",
+      "name": "Grok Build 0.1",
+      "vendor": "xAI",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://x.ai/",
+      "docs": "https://x.ai/",
+      "release": "",
+      "ctx": 256000,
+      "modality": "T+I",
+      "price": {
+        "in": 1,
+        "out": 2
+      },
+      "note": "自动收录·待复核",
+      "abilities": {
+        "overall": {
+          "score": null,
+          "src": "无 AA 公开数据"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": null,
+          "src": "无公开数据"
+        },
+        "ppt_html": {
+          "score": null,
+          "src": "待复核"
+        },
+        "vision": {
+          "score": null,
+          "src": "待复核"
+        },
+        "audio": {
+          "score": null,
+          "src": "待复核"
+        }
+      }
+    },
+    {
+      "id": "qwen38-flash",
+      "name": "Qwen3.8-Flash",
+      "vendor": "Alibaba Qwen",
+      "country": "CN",
+      "access": "direct",
+      "open": false,
+      "homepage": "https://tongyi.aliyun.com/",
+      "docs": "https://tongyi.aliyun.com/",
+      "release": "2026-08",
+      "ctx": 1000000,
+      "modality": "T",
+      "price": {
+        "in": 0.15,
+        "out": 0.47
+      },
+      "note": "自动收录·待复核",
+      "abilities": {
+        "overall": {
+          "score": 55.8,
+          "src": "AA Index 2026-09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 92.3,
+          "src": "GPQA 2026-09-05"
+        },
+        "ppt_html": {
+          "score": null,
+          "src": "待复核"
+        },
+        "vision": {
+          "score": null,
+          "src": "待复核"
+        },
+        "audio": {
+          "score": null,
+          "src": "待复核"
+        }
+      }
+    },
+    {
+      "id": "kimi-k27-code",
+      "name": "Kimi K2.7 Code",
+      "vendor": "Moonshot AI",
+      "country": "CN",
+      "access": "direct",
+      "open": true,
+      "homepage": "https://www.moonshot.cn/",
+      "docs": "https://www.moonshot.cn/",
+      "release": "2026-06",
+      "ctx": 262144,
+      "modality": "T+I+V",
+      "price": {
+        "in": 0.95,
+        "out": 4
+      },
+      "note": "自动收录·待复核",
+      "abilities": {
+        "overall": {
+          "score": 43,
+          "src": "AA Index 2026-09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 89.6,
+          "src": "GPQA 2026-09-05"
+        },
+        "ppt_html": {
+          "score": null,
+          "src": "待复核"
+        },
+        "vision": {
+          "score": null,
+          "src": "待复核"
+        },
+        "audio": {
+          "score": null,
+          "src": "待复核"
+        }
+      }
+    },
+    {
+      "id": "glm-5",
+      "name": "GLM-5",
+      "vendor": "Zhipu AI (Z.ai)",
+      "country": "CN",
+      "access": "direct",
+      "open": true,
+      "homepage": "https://www.z.ai/",
+      "docs": "https://www.z.ai/",
+      "release": "2026-02",
+      "ctx": 200000,
+      "modality": "T",
+      "price": {
+        "in": 1,
+        "out": 3.2
+      },
+      "note": "自动收录·待复核",
+      "abilities": {
+        "overall": {
+          "score": 40.6,
+          "src": "AA Index 2026-09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 82,
+          "src": "GPQA 2026-09-05"
+        },
+        "ppt_html": {
+          "score": null,
+          "src": "待复核"
+        },
+        "vision": {
+          "score": null,
+          "src": "待复核"
+        },
+        "audio": {
+          "score": null,
+          "src": "待复核"
+        }
+      }
+    },
+    {
+      "id": "glm-47",
+      "name": "GLM-4.7",
+      "vendor": "Zhipu AI (Z.ai)",
+      "country": "CN",
+      "access": "direct",
+      "open": true,
+      "homepage": "https://www.z.ai/",
+      "docs": "https://www.z.ai/",
+      "release": "",
+      "ctx": 0,
+      "modality": "T",
+      "price": {
+        "in": 0.6,
+        "out": 2.2
+      },
+      "note": "自动收录·待复核",
+      "abilities": {
+        "overall": {
+          "score": 34.5,
+          "src": "AA Index 2026-09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 85.9,
+          "src": "GPQA 2026-09-05"
+        },
+        "ppt_html": {
+          "score": null,
+          "src": "待复核"
+        },
+        "vision": {
+          "score": null,
+          "src": "待复核"
+        },
+        "audio": {
+          "score": null,
+          "src": "待复核"
+        }
+      }
+    },
+    {
+      "id": "minimax-m27",
+      "name": "MiniMax M2.7",
+      "vendor": "MiniMax",
+      "country": "CN",
+      "access": "direct",
+      "open": true,
+      "homepage": "https://www.minimaxi.com/",
+      "docs": "https://www.minimaxi.com/",
+      "release": "",
+      "ctx": 0,
+      "modality": "T",
+      "price": {
+        "in": 0.3,
+        "out": 1.2
+      },
+      "note": "自动收录·待复核",
+      "abilities": {
+        "overall": {
+          "score": 38.9,
+          "src": "AA Index 2026-09-05"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": 87.4,
+          "src": "GPQA 2026-09-05"
+        },
+        "ppt_html": {
+          "score": null,
+          "src": "待复核"
+        },
+        "vision": {
+          "score": null,
+          "src": "待复核"
+        },
+        "audio": {
+          "score": null,
+          "src": "待复核"
         }
       }
     }
