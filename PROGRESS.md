@@ -47,10 +47,10 @@
 ## 自动更新机制（GitHub Actions，每周云端自动，不依赖电脑开机）
 - `.github/workflows/update.yml`：每周日 22:00 UTC（周一 06:00 北京时间）自动触发，也可手动 workflow_dispatch
 - 云端链路（ubuntu runner）：
-  1. `fetch_models.py`：拉 aiapiindex prices.json（价格/AA综合/GPQA逻辑/上下文/模态）+ open.er-api 汇率 → 更新 models.json
+  1. `fetch_models.py`：拉 aiapiindex prices.json（价格/AA综合/GPQA逻辑/上下文/模态）+ open.er-api 汇率 → 刷新已有模型 + **自动发现新模型**（白名单厂商 × flagship/mid，未收录的自动新增，标注「自动收录·待复核」）
   2. `fetch_github.py --build`：GITHUB_TOKEN 并发查 65 repo 星数 → build.py 合成 data.js
   3. `git commit + push`（GITHUB_TOKEN，permissions: contents: write）→ GitHub Pages 自动重建
-- 已实测：workflow run 34551321225 success，自动 push commit 3718cbc，线上 data.js 更新到 01:36 UTC
+- 已实测：workflow run 34551321225 success；Actions 于 2026-09-13 自动跑过一周更新（commit 777dac9）
 - 本地 cron（原 9486dc2d94fc）已删除，避免与 Actions 双 push 冲突
 
 ## 遗留 / 待办
