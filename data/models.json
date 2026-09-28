@@ -1,13 +1,13 @@
 {
   "_meta": {
-    "source_price": "AI API Index prices.json (CC BY 4.0) — aiapiindex.com, asOf 2026-09-05",
+    "source_price": "AI API Index prices.json (CC BY 4.0) — aiapiindex.com, asOf 2026-09-24",
     "source_bench_aa": "Artificial Analysis Intelligence Index — via aiapiindex.com, 2026-09-05",
     "source_bench_swe": "SWE-bench Verified — DataLearnerAI 排行榜, 2026-09-04",
     "source_bench_gpqa": "GPQA Diamond — via aiapiindex.com, 2026-09-05",
-    "fx_usd_cny": 6.718405,
-    "fx_date": "2026-09-20",
+    "fx_usd_cny": 6.729032,
+    "fx_date": "2026-09-28",
     "note": "综合=AA智能指数(客观10基准), 编程=SWE-bench Verified, 逻辑=GPQA Diamond(研究生级科学推理). ppt_html/vision/audio 为「实践评级」(预估,待Tommy实测校准), 无benchmark。分数null=无公开数据,页面显示—。注意: price_cny(人民币价)由 build.py 按汇率动态换算,仅存于生成的 assets/js/data.js,源 models.json 不含该字段。",
-    "models_refreshed": "2026-09-20 23:52 UTC"
+    "models_refreshed": "2026-09-28 00:18 UTC"
   },
   "models": [
     {
@@ -28,8 +28,8 @@
       },
       "abilities": {
         "overall": {
-          "score": 65.7,
-          "src": "AA Index 09-05"
+          "score": 53.4,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -71,8 +71,8 @@
       },
       "abilities": {
         "overall": {
-          "score": 63.1,
-          "src": "AA Index 09-05"
+          "score": 50.8,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": 96.0,
@@ -114,8 +114,8 @@
       },
       "abilities": {
         "overall": {
-          "score": 61.2,
-          "src": "AA Index 09-05"
+          "score": 52.7,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -157,8 +157,8 @@
       },
       "abilities": {
         "overall": {
-          "score": 60.9,
-          "src": "AA Index 09-05"
+          "score": 47,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -200,8 +200,8 @@
       },
       "abilities": {
         "overall": {
-          "score": 60.9,
-          "src": "AA Index 09-05"
+          "score": 44.3,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -243,16 +243,16 @@
       },
       "abilities": {
         "overall": {
-          "score": 60.8,
-          "src": "AA Index 09-05"
+          "score": 48.1,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
           "src": "SWE-bench 无公开数据"
         },
         "logic": {
-          "score": 94.1,
-          "src": "GPQA 09-05"
+          "score": 93.5,
+          "src": "GPQA 2026-09-24"
         },
         "ppt_html": {
           "score": 7,
@@ -286,8 +286,8 @@
       },
       "abilities": {
         "overall": {
-          "score": 47.7,
-          "src": "AA Index 09-05"
+          "score": 29.7,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": 80.6,
@@ -329,8 +329,8 @@
       },
       "abilities": {
         "overall": {
-          "score": 58.7,
-          "src": "AA Index 09-05"
+          "score": 40.9,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -372,8 +372,8 @@
       },
       "abilities": {
         "overall": {
-          "score": 56.3,
-          "src": "AA Index 09-05"
+          "score": 38.4,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -415,8 +415,8 @@
       },
       "abilities": {
         "overall": {
-          "score": 55.3,
-          "src": "AA Index 09-05"
+          "score": 38.2,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": 85.2,
@@ -458,8 +458,8 @@
       },
       "abilities": {
         "overall": {
-          "score": 59.7,
-          "src": "AA Index 09-05"
+          "score": 43.6,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -501,8 +501,8 @@
       },
       "abilities": {
         "overall": {
-          "score": 59.5,
-          "src": "AA Index 09-05"
+          "score": 44.8,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -544,16 +544,16 @@
       },
       "abilities": {
         "overall": {
-          "score": 58.1,
-          "src": "AA Index 09-05"
+          "score": 45.4,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
           "src": "SWE-bench 无公开数据"
         },
         "logic": {
-          "score": 92.7,
-          "src": "GPQA 09-05"
+          "score": 92.8,
+          "src": "GPQA 2026-09-24"
         },
         "ppt_html": {
           "score": 8,
@@ -587,8 +587,8 @@
       },
       "abilities": {
         "overall": {
-          "score": 53.2,
-          "src": "AA Index 09-05"
+          "score": 36,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": 80.6,
@@ -624,15 +624,15 @@
       "docs": "https://api-docs.deepseek.com/",
       "release": "2026-09",
       "ctx": 1000000,
-      "modality": "T+I+V",
+      "modality": "T+I",
       "price": {
         "in": 0.3,
         "out": 1.2
       },
       "abilities": {
         "overall": {
-          "score": null,
-          "src": "待 aiapiindex 收录(2026-09-10发布)"
+          "score": 39.5,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": 90.6,
@@ -674,8 +674,8 @@
       },
       "abilities": {
         "overall": {
-          "score": 51.8,
-          "src": "AA Index 09-05"
+          "score": 34.3,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": 79.0,
@@ -718,8 +718,8 @@
       },
       "abilities": {
         "overall": {
-          "score": 57.5,
-          "src": "AA Index 09-05"
+          "score": 41.8,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -761,8 +761,8 @@
       },
       "abilities": {
         "overall": {
-          "score": 45.4,
-          "src": "AA Index 09-05"
+          "score": 29.2,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -804,8 +804,8 @@
       },
       "abilities": {
         "overall": {
-          "score": 39.4,
-          "src": "AA Index 09-05"
+          "score": 25.2,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -847,8 +847,8 @@
       },
       "abilities": {
         "overall": {
-          "score": 45.1,
-          "src": "AA Index 09-05"
+          "score": 27,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": 80.2,
@@ -934,8 +934,8 @@
       "note": "自动收录·待复核",
       "abilities": {
         "overall": {
-          "score": 56.6,
-          "src": "AA Index 2026-09-05"
+          "score": 42.1,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -1022,8 +1022,8 @@
       "note": "自动收录·待复核",
       "abilities": {
         "overall": {
-          "score": 45.5,
-          "src": "AA Index 2026-09-05"
+          "score": 32.5,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -1066,8 +1066,8 @@
       "note": "自动收录·待复核",
       "abilities": {
         "overall": {
-          "score": 37.9,
-          "src": "AA Index 2026-09-05"
+          "score": 24.9,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -1154,8 +1154,8 @@
       "note": "自动收录·待复核",
       "abilities": {
         "overall": {
-          "score": 55.8,
-          "src": "AA Index 2026-09-05"
+          "score": 39.8,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -1198,8 +1198,8 @@
       "note": "自动收录·待复核",
       "abilities": {
         "overall": {
-          "score": 43,
-          "src": "AA Index 2026-09-05"
+          "score": 25.8,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -1242,8 +1242,8 @@
       "note": "自动收录·待复核",
       "abilities": {
         "overall": {
-          "score": 40.6,
-          "src": "AA Index 2026-09-05"
+          "score": 27.9,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -1286,8 +1286,8 @@
       "note": "自动收录·待复核",
       "abilities": {
         "overall": {
-          "score": 34.5,
-          "src": "AA Index 2026-09-05"
+          "score": 22.2,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -1330,8 +1330,8 @@
       "note": "自动收录·待复核",
       "abilities": {
         "overall": {
-          "score": 38.9,
-          "src": "AA Index 2026-09-05"
+          "score": 22.8,
+          "src": "AA Index 2026-09-24"
         },
         "coding": {
           "score": null,
@@ -1340,6 +1340,138 @@
         "logic": {
           "score": 87.4,
           "src": "GPQA 2026-09-05"
+        },
+        "ppt_html": {
+          "score": null,
+          "src": "待复核"
+        },
+        "vision": {
+          "score": null,
+          "src": "待复核"
+        },
+        "audio": {
+          "score": null,
+          "src": "待复核"
+        }
+      }
+    },
+    {
+      "id": "gpt-6-sol",
+      "name": "GPT-6 Sol",
+      "vendor": "OpenAI",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://openai.com/",
+      "docs": "https://openai.com/",
+      "release": "2026-09",
+      "ctx": 1050000,
+      "modality": "T+I",
+      "price": {
+        "in": 2,
+        "out": 10
+      },
+      "note": "自动收录·待复核",
+      "abilities": {
+        "overall": {
+          "score": 47.5,
+          "src": "AA Index 2026-09-24"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": null,
+          "src": "无公开数据"
+        },
+        "ppt_html": {
+          "score": null,
+          "src": "待复核"
+        },
+        "vision": {
+          "score": null,
+          "src": "待复核"
+        },
+        "audio": {
+          "score": null,
+          "src": "待复核"
+        }
+      }
+    },
+    {
+      "id": "claude-opus-55",
+      "name": "Claude Opus 5.5",
+      "vendor": "Anthropic",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://www.anthropic.com/claude",
+      "docs": "https://www.anthropic.com/claude",
+      "release": "2026-09",
+      "ctx": 1000000,
+      "modality": "T+I",
+      "price": {
+        "in": 4,
+        "out": 20
+      },
+      "note": "自动收录·待复核",
+      "abilities": {
+        "overall": {
+          "score": 57.6,
+          "src": "AA Index 2026-09-24"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": null,
+          "src": "无公开数据"
+        },
+        "ppt_html": {
+          "score": null,
+          "src": "待复核"
+        },
+        "vision": {
+          "score": null,
+          "src": "待复核"
+        },
+        "audio": {
+          "score": null,
+          "src": "待复核"
+        }
+      }
+    },
+    {
+      "id": "grok-47",
+      "name": "Grok 4.7",
+      "vendor": "xAI",
+      "country": "US",
+      "access": "vpn",
+      "open": false,
+      "homepage": "https://x.ai/",
+      "docs": "https://x.ai/",
+      "release": "2026-09",
+      "ctx": 500000,
+      "modality": "T+I",
+      "price": {
+        "in": 2,
+        "out": 6
+      },
+      "note": "自动收录·待复核",
+      "abilities": {
+        "overall": {
+          "score": 46.4,
+          "src": "AA Index 2026-09-24"
+        },
+        "coding": {
+          "score": null,
+          "src": "SWE-bench 无公开数据"
+        },
+        "logic": {
+          "score": null,
+          "src": "无公开数据"
         },
         "ppt_html": {
           "score": null,
